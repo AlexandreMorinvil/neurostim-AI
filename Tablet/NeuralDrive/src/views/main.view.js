@@ -4,6 +4,8 @@ import { View, Dimensions, StyleSheet } from 'react-native';
 import { COLOR_BACKGROUND } from '../styles/colors.style.js';
 import PanelControl from '../components/main/panel-control/panel-control.component.js';
 import PanelVizualization from "../components/main/panel-visualization/panel-visualization.component";
+// import PortalHost from 'react-native-paper/lib/typescript/components/Portal/PortalHost.js';
+import { Portal } from 'react-native-paper';
 
 const MainView = () => {
 
@@ -25,6 +27,8 @@ const MainView = () => {
    * Render
    */
   return (
+    // <Portal.Host>
+      <Portal.Host>
     <View
       style={[
         styles.viewContainer,
@@ -39,6 +43,9 @@ const MainView = () => {
         <PanelVizualization />
       </View>
     </View>
+      </Portal.Host>
+    // </Portal.Host>
+
   );
 }
 

@@ -4,6 +4,7 @@ import { StyleSheet } from 'react-native';
 import PanelItem from '../../panel-item.component';
 import SectionConnectionStatus from './section-connection-status.component';
 import SectionSessionStarter from './section-session-starter.component';
+import SectionModalButtons from './section-temporary-modalbuttons';
 
 const ITEM_TITLE = "Session Management";
 
@@ -19,6 +20,7 @@ const PanelItemSession = () => {
     >
       <SectionConnectionStatus style={styles.spacing} />
       <SectionSessionStarter />
+      <SectionModalButtons/>
     </PanelItem>
   );
 };

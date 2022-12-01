@@ -21,7 +21,7 @@ const NOT_CONNECTED_EXTERNAL_HEADER_SUMMARY = (ipAddress) => `No connection (${i
 const NOT_CONNECTED_LOCAL_HEADER_SUMMARY = "No Connection";
 
 
-const SettingsMenuItemConnectionBackend = () => {
+const SettingsMenuItemConnectionBackend = ({accordionIsActive}) => {
 
   /**
    * States
@@ -116,6 +116,7 @@ const SettingsMenuItemConnectionBackend = () => {
       title="Backend Connection"
       summaryText={stateHeaderSummary}
       settingStatus={stateSettingStatus}
+      isActive={accordionIsActive}
     >
       <View>
         <SectionChoiceBackend

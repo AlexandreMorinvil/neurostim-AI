@@ -49,12 +49,13 @@ def generate_heatmap_image(values_list,
 def compute_mean_along_dimension(values_list, parameter):
     return np.mean(values_list, axis=parameter)
 
-def generate_2d_graph_image(values_list, 
+def generate_2d_graph_image(values_list,
                             dimensions_list, 
                             first_parameter_index,
                             second_parameter_index,
                             x_parameter_name = "", 
                             y_parameter_name = ""):
+    pass
     
     # # Main heatmap
     # plt.clf()

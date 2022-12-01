@@ -1,25 +1,48 @@
+from enum import Enum
+from inspect import _void
 import json
-from typing import Union
+from lib2to3.pgen2.token import STAR
+import sys
+from typing import Callable, Union
 from command import Action
 from command import Session_status
 from algorithm.NeuroAlgorithmPrediction import NeuroAlgorithmPrediction
-from algorithm.vizualization import generate_heatmap_image
 from interface.session import Session
+from algorithm.vizualization import generate_heatmap_image
+import numpy as np
+import random
+from interface.watchData import WatchData
+#from database import Database
+
+####################################################################################################
+#### Represent the different mode available to tranfer data
+#### SERIAL : watch - tablet - server - dataBase 
+#### STAR : all data is pass to the server
+####################################################################################################
+class Mode(Enum):
+    SERIAL = 0
+    STAR = 1
 
 ####################################################################################################
 #### This class execute process depend of the command and the choosen mode
 ####################################################################################################
 class CommandHandler:
     def __init__(self, socketIO):
+        self.stack_watch_data = []
+        self.current_handler = None
         self.socketIO = socketIO
         self.ssid = None
         self.current_session = None
+        self.current_save_session = None
+        #self.db : Database = Database()
+        #self.db.connect()
 
-    ################################################################################################
-    #### Execute command and return resulting values
-    ################################################################################################
+####################################################################################################
+#### START_SESSION : Create a new session.
+#### EXECUTE_QUERY : Execute one iteration of the algorithme
+#### RECEIVE_DATA_WATCH : debug canal to recive watch data
+####################################################################################################
     def handle_command(self, action: int, arg: Union[int, dict, str]) -> Union[None, list, int]:
-        
         print("Action :", action, ", Arguments :", arg)
 
         if action == Action.EXECUTE_QUERY.value:
@@ -65,6 +88,7 @@ class CommandHandler:
                 self.socketIO.emit('message', arg["value"], room=self.ssid)
     
         elif action == Action.START_SESSION.value:
+            self.free_stack_watch_data()
             # Arguments parsing
             dimensions = arg["dimensions"]
 
@@ -76,3 +100,19 @@ class CommandHandler:
             return  { 
                 "status" : Session_status.START.value
             }
+
+    def release(self, *_) -> None:
+        if self.current_handler != None:
+            self.current_handler.release()
+        sys.exit(0)
+
+    def push_watch_data_in_stack(self, data):
+        if(self.current_save_session):
+            self.stack_watch_data += data
+            #print(self.stack_watch_data)
+            print("push in stack")
+
+
+    def free_stack_watch_data(self):
+        self.stack_watch_data = []
+        print("free stack")

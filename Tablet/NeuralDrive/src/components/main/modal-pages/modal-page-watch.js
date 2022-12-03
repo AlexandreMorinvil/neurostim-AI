@@ -1,8 +1,9 @@
 
 
 import * as React from 'react';
-import { View } from 'react-native';
-import { Button, Paragraph, Dialog, Portal, Provider } from 'react-native-paper';
+import { View, ScrollView} from 'react-native';
+import { Button, Paragraph, Dialog, Text,  Portal, Provider } from 'react-native-paper';
+import SectionConnectionWatch from '../../settings/menu-item-connection-watch/section-connection-watch.component';
 
 const ModalWatch = () => {
   const [visible, setVisible] = React.useState(false);
@@ -12,22 +13,24 @@ const ModalWatch = () => {
   const hideDialog = () => setVisible(false);
 
   return (
-    // <Provider>
       <View>
-        <Button onPress={showDialog}>Show Dialog</Button>
+        <Button onPress={showDialog}>Show Dialog Watch</Button>
         <Portal>
           <Dialog visible={visible} onDismiss={hideDialog}>
-            <Dialog.Title>Alert</Dialog.Title>
+            <Dialog.Title>Watch has been disconnected</Dialog.Title>
             <Dialog.Content>
-              <Paragraph>This is simple dialog</Paragraph>
+              <Dialog.ScrollArea>
+                <ScrollView>
+                  <SectionConnectionWatch/>
+                </ScrollView>
+              </Dialog.ScrollArea>
+              <Dialog.Actions>
+                <Button onPress={hideDialog}>Done</Button>
+              </Dialog.Actions>
             </Dialog.Content>
-            <Dialog.Actions>
-              <Button onPress={hideDialog}>Done</Button>
-            </Dialog.Actions>
           </Dialog>
         </Portal>
       </View>
-    // </Provider>
   );
 };
 

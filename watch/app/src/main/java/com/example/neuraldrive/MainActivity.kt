@@ -217,7 +217,7 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         binding.setIP.setOnClickListener{
             ipAddressServer = "$ipPart1.$ipPart2.$ipPart3.$ipPart4"
             println(ipAddressServer)
-            if(ipPart1!=null && ipPart2 != null && ipPart3 != null && ipPart4!=null){
+            if(ipAddressServer!="..."){
                 saveData()
             }
         }

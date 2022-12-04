@@ -58,6 +58,7 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
 
     private lateinit var sensorManager: SensorManager
     private var accelSensor: Sensor? = null
+    private var gravSensor: Sensor? = null
     private var gyroSensor: Sensor? = null
 
     private var gyroX: Float = 0.0f; private var gyroY: Float = 0.0f ; private var gyroZ: Float = 0.0f
@@ -140,6 +141,8 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         if((sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)  != null)and(sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE)  != null)) {
             accelSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
             sensorManager.registerListener(this,accelSensor, SensorManager.SENSOR_DELAY_GAME)
+            gravSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY)
+            sensorManager.registerListener(this,gravSensor, SensorManager.SENSOR_DELAY_GAME)
             gyroSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
             sensorManager.registerListener(this,gyroSensor, SensorManager.SENSOR_DELAY_GAME)
         }else{
@@ -215,9 +218,14 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         ipPart4.filters = arrayOf<InputFilter>(InputFilterMinMax("0", "255"))
 
         binding.setIP.setOnClickListener{
-            ipAddressServer = "$ipPart1.$ipPart2.$ipPart3.$ipPart4"
-            println(ipAddressServer)
-            if(ipAddressServer!="..."){
+            println("$ipPart1.$ipPart2.$ipPart3.$ipPart4".isEmpty())
+            println("this: $ipPart1")
+            if (ipPart1.isNotEmpty() &&
+                ipPart2.isNotEmpty() &&
+                ipPart3.isNotEmpty() &&
+                ipPart4.isNotEmpty()
+            ) {
+                ipAddressServer = "$ipPart1.$ipPart2.$ipPart3.$ipPart4"
                 saveData()
             }
         }

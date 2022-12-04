@@ -26,6 +26,9 @@ const ModalServer = () => {
                 2. If you selected an external backend connection,
                    enter the corresponding IP address.
               </Text>
+              <Text variant='titleMedium'>
+                3. Click 'Connect'
+              </Text>
               <Dialog.ScrollArea style={{height: 600}}>
                 <ScrollView>
                   <SettingsMenuItemConnectionBackend accordionIsActive={true}/>

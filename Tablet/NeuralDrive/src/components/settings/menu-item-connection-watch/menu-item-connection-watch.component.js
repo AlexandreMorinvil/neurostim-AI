@@ -10,7 +10,7 @@ import * as connectionWatchService from "../../../services/connection-watch.serv
 const CONNECTED_HEADER_SUMMARY = "Connected";
 const NO_CONNECTION_HEADER_SUMMARY = "No Connection";
 
-const SettingsMenuItemConnectionWatch = () => {
+const SettingsMenuItemConnectionWatch = ({accordionIsActive}) => {
 
   /**
    * States
@@ -51,6 +51,7 @@ const SettingsMenuItemConnectionWatch = () => {
       title="Smart Watch Connection"
       summaryText={stateHeaderSummary}
       settingStatus={stateSettingStatus}
+      isActive={accordionIsActive}
     >
       <SectionConnectionWatch />
     </AccodionItem>

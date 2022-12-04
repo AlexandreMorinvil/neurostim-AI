@@ -2,8 +2,8 @@
 
 import * as React from 'react';
 import { View, ScrollView} from 'react-native';
-import { Button, Paragraph, Dialog, Text,  Portal, Provider } from 'react-native-paper';
-import SectionConnectionWatch from '../../settings/menu-item-connection-watch/section-connection-watch.component';
+import { Button, Dialog, Text,  Portal } from 'react-native-paper';
+import SettingsMenuItemConnectionWatch from '../../settings/menu-item-connection-watch/menu-item-connection-watch.component';
 
 const ModalWatch = () => {
   const [visible, setVisible] = React.useState(false);
@@ -21,7 +21,7 @@ const ModalWatch = () => {
             <Dialog.Content>
               <Dialog.ScrollArea>
                 <ScrollView>
-                  <SectionConnectionWatch/>
+                  <SettingsMenuItemConnectionWatch accordionIsActive={true}/>
                 </ScrollView>
               </Dialog.ScrollArea>
               <Dialog.Actions>

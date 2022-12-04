@@ -62,6 +62,7 @@ def watch_packet() -> Response:
     data = request.data.decode('UTF-8')
     response = "packet accepted" 
     data= json.loads(data)
+<<<<<<< HEAD
     command_handler.push_watch_data_in_stack(data)
     
     print(data)
@@ -69,6 +70,13 @@ def watch_packet() -> Response:
     return jsonify({"content": response})
 
 
+=======
+    # command_handler.push_watch_data_in_stack(data)
+
+    print(data)
+    socketio.emit('watch_packet', json.dumps(data), broadcast=True, includde_self=False)
+    return jsonify({"content": response})
+>>>>>>> watch
 
 ####################################################################################################
 #### Reception and handling of commands from the tablet.

@@ -1,0 +1,89 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+        minSdk 26
+        targetSdk 30
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    lintOptions {
+        warningsAsErrors true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+        allWarningsAsErrors = true
+        freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    packagingOptions {
+        // for JNA and JNA-platform
+        exclude "META-INF/AL2.0"
+        exclude "META-INF/LGPL2.1"
+    }
+}
+
+dependencies {
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.androidx.activity.ktx
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.wear
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.squareup.okhttp3:mockwebserver:4.10.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+  implementation 'androidx.test:runner:1.5.1'
+  implementation 'androidx.test.ext:junit-ktx:1.1.4'
+  implementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+  androidTestImplementation libs.test.core
+    androidTestImplementation libs.test.core.ktx
+    androidTestImplementation libs.test.espresso.core
+    androidTestImplementation libs.test.ext.junit
+    androidTestImplementation libs.test.ext.junit.ktx
+    androidTestImplementation libs.test.ext.truth
+    androidTestImplementation libs.test.runner
+    androidTestImplementation libs.test.rules
+    androidTestImplementation libs.test.uiautomator
+    androidTestImplementation libs.com.google.truth
+    androidTestImplementation libs.kotlinx.coroutines.test
+    androidTestImplementation libs.test.core
+    androidTestImplementation libs.test.core.ktx
+    androidTestImplementation libs.test.espresso.core
+    androidTestImplementation libs.test.ext.junit
+    androidTestImplementation libs.test.ext.junit.ktx
+    androidTestImplementation libs.test.ext.truth
+    androidTestImplementation libs.test.runner
+    androidTestImplementation libs.test.rules
+    androidTestImplementation libs.test.uiautomator
+    androidTestImplementation libs.com.google.truth
+}

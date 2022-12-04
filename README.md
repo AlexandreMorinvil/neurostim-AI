@@ -150,10 +150,10 @@ Vous pouvez essayer de :</p>
   - styles: This folder contains the information that permits us to setup the colours and aesthetics of the application<br>
   - views: This folder contains the various pages of our application such as the setting page, main page and etc.</li>
 <li class="has-line-data" data-line-start="158" data-line-end="166"><strong>watch_app</strong> :<br>
- - AlwaysOnNeuralDrive:<br>
-  - app:<br>
-   - src/main:<br>
-   - alwayson: This folder contains the MainActivity.kt file that implements the ambient mode support and the sensor event listener support, and the SettingsActivity.kt file that implements the setting page to allow the IP address to be entered and saved<br>
+ - watch:<br>
+  - app/src:<br>
+   - androidTest: This folder contains the MainActivityTest.kt that implements the tests for the differents features of the app.
+   - neuraldrive: This folder contains the MainActivity.kt file that implements the ambient mode support and the sensor event listener support, and the InputFilter.kt file that controls the input field for the IP address so that we don't have any errors<br>
     - res: This folders contains all the layout components of the watch application<br>
     - AndroidManifest.xml: This file contains all the permissions to allow the app to use all its features</li>
 </ul>

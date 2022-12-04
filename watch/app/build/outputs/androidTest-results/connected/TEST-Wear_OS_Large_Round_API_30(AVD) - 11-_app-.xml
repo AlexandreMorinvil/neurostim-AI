@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.neuraldrive.MainActivityTests" tests="5" failures="0" errors="0" skipped="0" time="36.028" timestamp="2022-12-03T01:02:29" hostname="localhost">
+  <properties>
+    <property name="device" value="Wear_OS_Large_Round_API_30(AVD) - 11" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="textIsCorrectAfterFiveSeconds" classname="com.example.neuraldrive.MainActivityTests" time="10.708" />
+  <testcase name="initialTextIsCorrect" classname="com.example.neuraldrive.MainActivityTests" time="4.749" />
+  <testcase name="textIsCorrectAfterReturningToActiveMode" classname="com.example.neuraldrive.MainActivityTests" time="5.913" />
+  <testcase name="textIsCorrectAfterGoingIntoAmbientModeAndReceivingIntent" classname="com.example.neuraldrive.MainActivityTests" time="7.189" />
+  <testcase name="textIsCorrectAfterGoingIntoAmbientMode" classname="com.example.neuraldrive.MainActivityTests" time="6.157" />
+</testsuite>

@@ -61,6 +61,7 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
     private var gyroSensor: Sensor? = null
 
     private var gyroX: Float = 0.0f; private var gyroY: Float = 0.0f ; private var gyroZ: Float = 0.0f
+    private var gravityX: Float = 0.0f; private var gravityY: Float = 0.0f ; private var gravityZ: Float = 0.0f
     private var accelX: Float = 0.0f; private var accelY: Float = 0.0f; private var accelZ: Float = 0.0f
 
     private val client = OkHttpClient()
@@ -148,7 +149,7 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         //Sending data every 500 ms
         Timer().scheduleAtFixedRate( object : TimerTask() {
             override fun run() {
-                if(ipAddressServer!="") {
+                if(ipAddressServer!="" && stack[stack.length-1]!=']') {
                     println(stack)
                     sendData()
                 }
@@ -216,7 +217,9 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         binding.setIP.setOnClickListener{
             ipAddressServer = "$ipPart1.$ipPart2.$ipPart3.$ipPart4"
             println(ipAddressServer)
-            saveData()
+            if(ipPart1!=null && ipPart2 != null && ipPart3 != null && ipPart4!=null){
+                saveData()
+            }
         }
 
         binding.showIP.setOnClickListener{
@@ -293,6 +296,12 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
             accelZ = event.values[2]
         }
 
+        if (event.sensor.type == Sensor.TYPE_GRAVITY){
+            gravityX = event.values[0]
+            gravityY = event.values[1]
+            gravityZ = event.values[2]
+        }
+
         if (event.sensor.type == Sensor.TYPE_GYROSCOPE){
             gyroX = event.values[0]
             gyroY = event.values[1]
@@ -301,7 +310,7 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
         val currentTime = sdf.format(Date())
 
-        addDataToStack(currentTime ,accelX, accelY, accelZ, gyroX, gyroY, gyroZ)
+        addDataToStack(currentTime ,accelX, accelY, accelZ, gravityX, gravityY, gravityZ, gyroX, gyroY, gyroZ)
     }
 
     //Sensor feature
@@ -321,12 +330,15 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
     }
 
     //Creating the data stack
-    private fun addDataToStack(currentTime : String, acc_x : Float, acc_y : Float, acc_z : Float, gir_x : Float, gir_y : Float, gir_z : Float){
+    private fun addDataToStack(currentTime : String, acc_x : Float, acc_y : Float, acc_z : Float, grav_x : Float, grav_y : Float, grav_z : Float, gir_x : Float, gir_y : Float, gir_z : Float){
         val data = "{"+
             "\"time\"" + ":" + "\""+currentTime +"\""+ ","+
             "\"acc_x\"" + ":" + "\""+acc_x.toString() +"\""+ ","+
             "\"acc_y\"" + ":" + "\""+acc_y.toString() +"\""+ ","+
             "\"acc_z\"" + ":" + "\""+acc_z.toString() +"\""+ ","+
+            "\"grav_x\"" + ":" + "\""+grav_x.toString() +"\""+ ","+
+            "\"grav_y\"" + ":" + "\""+grav_y.toString() +"\""+ ","+
+            "\"grav_z\"" + ":" + "\""+grav_z.toString() +"\""+ ","+
             "\"gir_x\"" + ":" + "\""+gir_x.toString() +"\""+ ","+
             "\"gir_y\"" + ":" + "\""+gir_y.toString() +"\""+ ","+
             "\"gir_z\"" + ":" + "\""+gir_z.toString() +"\""+

@@ -7,7 +7,7 @@ import { COLOR_BACKGROUND } from '../../../../styles/colors.style';
 import MessageBubble from '../../../message-bubble.component';
 
 const TEXT_INSERT_VALUE = `Insert value`;
-const TEXT_SUGGESTED_VALUE = value => `Suggest : ${value}`;
+const TEXT_SUGGESTED_VALUE = value => `Sug : ${value}`;
 const TEXT_OLD_VALUE_BUTTON = 'Old';
 
 const IMPOSED_VALUE_TYPE_SUGGESTED = 'suggested';

@@ -51,7 +51,7 @@ const DialogData = (props, ref) => {
             </LineChart> */}
             <Image
               source={{
-                uri: `data:image/png;base64,${session.hashHeatMap}`,
+                uri: `data:image/jpeg;base64,${session.hashHeatMap}`,
               }}
               resizeMode="contain"
               style={styles.image}

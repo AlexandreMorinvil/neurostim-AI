@@ -30,7 +30,7 @@ export function getScalarizedTremorPointListToDisplay(countPoints, keepPointFreq
 export function getMovingAveragePointsListToDisplay(countPoints, keepPointFrequency) {
   const movingAverageTremorPointsBuffer = computeMovingAverageTremorPointsBuffer(MOVING_AVERAGE_WINDOW_COUNT_POINTS);
   const countPointsToTake = countPoints - Math.ceil(MOVING_AVERAGE_WINDOW_COUNT_POINTS / 2);
-  const pointsList =  movingAverageTremorPointsBuffer.slice(-countPointsToTake);
+  const pointsList = movingAverageTremorPointsBuffer.slice(-countPointsToTake);
   return pointsList.filter((value, index) => { return index % keepPointFrequency === 0 });
 }
 
@@ -62,12 +62,18 @@ function computeMovingAverageTremorPointsBuffer(windowSize) {
 }
 
 function scalarizeTremorPoint(rawDataPoint) {
-  const { xAcceleration, yAcceleration, zAcceleration } = rawDataPoint;
+  const {
+    xAcceleration,
+    yAcceleration,
+    zAcceleration,
+    xGravityAcceleration,
+    yGravityAcceleration,
+    zGravityAcceleration
+  } = rawDataPoint;
   return Math.sqrt(
-    Math.pow(xAcceleration, 2),
-    Math.pow(yAcceleration, 2),
-    Math.pow(zAcceleration, 2)
-  );
+    Math.pow((xAcceleration - xGravityAcceleration), 2) +
+    Math.pow((yAcceleration - yGravityAcceleration), 2) +
+    Math.pow((zAcceleration - zGravityAcceleration), 2));
 }
 
 async function updateBuffers(rawDataPointsBuffer) {

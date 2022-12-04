@@ -36,14 +36,17 @@ export async function handleReceivedWatchPacket(watchPacket) {
 
 // Private methods
 function makeWatchPoint(watchPointObject) {
-  const { acc_x, acc_y, acc_z, gir_x, gir_y, gir_z } = watchPointObject || {};
+  const { acc_x, acc_y, acc_z, gir_x, gir_y, gir_z, grav_x, grav_y, grav_z } = watchPointObject || {};
   return {
     xAcceleration: acc_x || 0,
     yAcceleration: acc_y || 0,
     zAcceleration: acc_z || 0,
     xRotation: gir_x || 0,
     yRotation: gir_y || 0,
-    zRotation: gir_z || 0
+    zRotation: gir_z || 0,
+    xGravityAcceleration: grav_x || 0,
+    yGravityAcceleration: grav_y || 0,
+    zGravityAcceleration: grav_z || 0, 
   }
 }
 

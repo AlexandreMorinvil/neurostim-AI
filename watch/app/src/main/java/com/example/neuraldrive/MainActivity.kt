@@ -327,12 +327,8 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
     companion object {
         val MEDIA_TYPE_MARKDOWN = "text/x-markdown; charset=utf-8".toMediaType()
 
-        private const val TAG = "MainActivity"
-
         private val ACTIVE_INTERVAL = Duration.ofSeconds(1)
-
         private val AMBIENT_INTERVAL = Duration.ofSeconds(10)
-
         const val AMBIENT_UPDATE_ACTION =
             "com.example.neuraldrive.action.AMBIENT_UPDATE"
     }

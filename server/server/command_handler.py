@@ -74,8 +74,7 @@ class CommandHandler:
             algorithm = self.current_session.algorithm
             heatmap_base64_jpeg_image = generate_heatmap_image(algorithm.ymu,
                                                                algorithm.dimensions_list,
-                                                               first_parameter_index,
-                                                               second_parameter_index,
+                                                               algorithm.suggestion,
                                                                second_parameter_name,
                                                                first_parameter_name)
 

@@ -26,7 +26,7 @@ noise_max=0.05
 np.random.seed(0)
 
 positions= np.array([[0, 0], [0, 1], [0, 2], [0, 3], [1, 0], [1, 1], [1, 2], [1, 3], [2, 0], [2, 1], [2, 2], [2, 3], [3, 0], [3, 1], [3, 2], [3, 3]])
-n_Chan=len(positions)
+n_chan=len(positions)
 
 # Best known channel
 
@@ -38,15 +38,15 @@ matk.variance.set_prior(GPy.priors.Uniform(0.01**2,100**2), warning=False)
 matk.lengthscale.set_prior(GPy.priors.Uniform(rho_low, rho_high), warning=False)
 
 # Then run the sequential optimization
-DimSearchSpace = n_Chan
-MaxQueries = DimSearchSpace
-P_test =  np.zeros((DimSearchSpace, 2)) #storing all queries
+dim_search_space = n_chan
+MaxQueries = dim_search_space
+P_test =  np.zeros((dim_search_space, 2)) #storing all queries
 
             
 
 q=0 # query number                                
 hyp=[1.0, 1.0, 1.0, 1.0]  # initialize kernel hyperparameters               
-order_this= np.random.permutation(DimSearchSpace) # random permutation of each entry of the search space
+order_this= np.random.permutation(dim_search_space) # random permutation of each entry of the search space
 P_max=[] 
 
 mean_function = GPy.core.Mapping(input_dim=2,output_dim=1)
@@ -57,8 +57,8 @@ while q < MaxQueries:
     # We will sample the search space randomly for exactly nrnd queries
     if q>=nrnd:
         # Find next point (max of acquisition function)
-        AcquisitionMap = ymu + kappa*np.nan_to_num(np.sqrt(ys2)) # UCB acquisition function
-        NextQuery= np.where(AcquisitionMap.reshape(len(AcquisitionMap))==np.max(AcquisitionMap.reshape(len(AcquisitionMap))))
+        acquisition_map = ymu + kappa*np.nan_to_num(np.sqrt(ys2)) # UCB acquisition function
+        NextQuery= np.where(acquisition_map.reshape(len(acquisition_map))==np.max(acquisition_map.reshape(len(acquisition_map))))
         # select next query
         if len(NextQuery) > 1:
             NextQuery = NextQuery[np.random.randint(len(NextQuery))]    

@@ -33,6 +33,26 @@ export const post_get_save_session_info = async () => {
   return response.content;
 };
 
+export const post_save_session_local_tablet = async () => {
+  const command = {
+    action: Action.SAVE_SESSION_LOCAL_TABLET,
+    arg: {},
+  };
+  response = await sendCommand(command);
+  return response.content;
+};
+
+export const post_export_session_to_distant_server = async session => {
+  const command = {
+    action: Action.EXPORT_SESSION_TO_DISTANT_SERVER,
+    arg: {
+      session: session,
+    },
+  };
+  response = await sendCommand(command);
+  return response.content;
+};
+
 export const post_save_session = async () => {
   const command = {
     action: Action.SAVE_SESSION_LOCAL,

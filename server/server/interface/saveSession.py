@@ -14,6 +14,7 @@ class SaveSession():
     parameter_count = None
     points = []
     querys = []
+    hashHeatMap = ""
 
     def __init__(self, session_id, patient_id,dimension,parameter_count, points,querys) -> None:
         self.session_id = session_id
@@ -25,15 +26,36 @@ class SaveSession():
         self.points = points
         self.querys = querys
 
+def save_session_local_tablet(session):
+    json_object = session.__dict__
+    fileData = {
+                'session_id' : json_object['session_id'],
+                'patient_id' : json_object['patient_id'],
+                'date' : json_object['date'],
+                'time' : json_object['time'],
+                'dimension' : json_object['dimension'],
+                'parameter_count' : json_object['parameter_count'],
+                'isCheck' : False,
+                'points':json_object['points'],
+                'querys':json_object['querys']
+                }
+    return fileData
 
 
 def save_session_local(session):
     print(' save localy --------------------------')
     print(session.__dict__)
-    json_object = json.dumps(session.__dict__, indent=4)
+    json_object = json.dumps(session.__dict__)
     
     with open("storage/"+ str(session.session_id) + ".json", "w") as outfile:
         outfile.write(json_object)
+
+    return get_all_save_sessions()
+
+def save_exported_session(session):
+    print(' save localy --------------------------') 
+    with open("storage/"+ str(session["session_id"]) + ".json", "w") as outfile:
+        outfile.write(json.dumps(session))
 
     return get_all_save_sessions()
 

@@ -30,6 +30,7 @@ public class CalendarModule extends ReactContextBaseJavaModule {
     public String createCalendarEvent() {
         Log.d("CalendarModule", "Create event");
         
+        
         // new Thread( new Runnable() { @Override public void run() {
         //     Python py = Python.getInstance();
         //     //PyObject utilClass = py.getModule("server").get("Server");

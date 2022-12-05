@@ -1,0 +1,9 @@
+com.example.neuraldrive.test.app-jetified-core-1.5.0-0 /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/res
+com.example.neuraldrive.test.app-jetified-annotation-experimental-1.3.0-1 /Users/andrewabdo/.gradle/caches/transforms-3/cb39e5282afd142858c39ca6de3041f0/transformed/jetified-annotation-experimental-1.3.0/res
+com.example.neuraldrive.test.app-androidTest-2 /Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/build/generated/res/resValues/androidTest/debug
+com.example.neuraldrive.test.app-androidTest-3 /Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/build/generated/res/rs/androidTest/debug
+com.example.neuraldrive.test.app-mergeDebugAndroidTestResources-4 /Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.neuraldrive.test.app-mergeDebugAndroidTestResources-5 /Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.neuraldrive.test.app-merged_res-6 /Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/build/intermediates/merged_res/debugAndroidTest
+com.example.neuraldrive.test.app-androidTest-7 /Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/androidTest/res
+com.example.neuraldrive.test.app-androidTestDebug-8 /Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/androidTestDebug/res

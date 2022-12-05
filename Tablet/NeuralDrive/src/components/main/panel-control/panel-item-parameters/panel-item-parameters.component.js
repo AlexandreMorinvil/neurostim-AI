@@ -1,6 +1,7 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {StyleSheet, View} from 'react-native';
 import {Button, Text} from 'react-native-paper';
+import {Subject} from 'rxjs';
 
 import InputQueryParameter from './input-query-parameter.component';
 import OutputDisplayTremorMetric from './output-display-tremor-metric.component';
@@ -19,6 +20,8 @@ const BUTTON_TEXT_QUERY = 'PERFORM QUERY';
 const BUTTON_TEXT_RESET = 'RESET TO RECOMMENDED';
 
 const TEXT_FILL_ALL_VALUES = 'Please, fill all the values';
+
+const IMPOSED_VALUE_TYPE_SUGGESTED = 'suggested';
 
 const PanelItemParameters = () => {
   /**
@@ -47,21 +50,7 @@ const PanelItemParameters = () => {
   const [stateAreValuesReadyForQuery, setStateAreValuesReadyForQuery] =
     useState(false);
 
-  /**
-   * Referemces
-   */
-  const [elRefs, setElRefs] = React.useState([]);
-  useEffect(() => {
-    // add or remove refs
-    setElRefs(elRefs =>
-      Array(stateParametersList.length)
-        .fill()
-        .map((_, i) => elRefs[i] || React.createRef()),
-    );
-    console.log('elRefs', elRefs);
-  }, [stateParametersList]);
-
-  // console.log("Outside elRefs", elRefs);
+  const [stateSubject] = useState(new Subject());
 
   /**
    * Functions
@@ -93,6 +82,7 @@ const PanelItemParameters = () => {
         queryService.getLastQueryParametersList(),
       );
       updateStatus();
+      setAllParameterValuesToSuggestedValues();
       setStateIsQuerying(false);
     } catch (error) {
       setStateIsQuerying(false);
@@ -107,13 +97,10 @@ const PanelItemParameters = () => {
   };
 
   const setAllParameterValuesToSuggestedValues = () => {
-    // elRefs.forEach((valueAssignFunctionReference, index) => {
-    //   console.log("valueAssignFunctionReference", valueAssignFunctionReference);
-    //   valueAssignFunctionReference.current(stateSuggestedParametersValueList[index]);
-    // });
-    setStateSelectedParametersValueList(
-      stateSuggestedParametersValueList.map(value => String(value)),
-    );
+    // setStateSelectedParametersValueList(
+    //   stateSuggestedParametersValueList.map(value => String(value)),
+    // );
+    stateSubject.next(IMPOSED_VALUE_TYPE_SUGGESTED);
   };
 
   const updateStatus = () => {
@@ -167,12 +154,12 @@ const PanelItemParameters = () => {
         {stateParametersList.map((parameter, index) => {
           return (
             <InputQueryParameter
-              ref={elRefs[index]}
               key={index}
               style={styles.interSubSectionSpacing}
               isFirstInput={stateIsFirstQurey}
               isDisabled={stateIsQuerying}
               parameter={parameter}
+              parentSubject={stateSubject}
               previousValue={String(statePreviousParametersValueList[index])}
               suggestedValue={String(stateSuggestedParametersValueList[index])}
               setParentValueFunction={value => setParameterValue(index, value)}

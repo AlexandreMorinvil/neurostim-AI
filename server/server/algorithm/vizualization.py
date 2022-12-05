@@ -39,7 +39,7 @@ def generate_heatmap_image(values_list,
 
     # Generate image
     pic_iobytes = io.BytesIO()
-    plt.savefig(pic_iobytes, format='jpeg')
+    plt.savefig(pic_iobytes, format='png')
     pic_iobytes.seek(0)
     pic_hash = base64.b64encode(pic_iobytes.read())
     
@@ -49,7 +49,20 @@ def generate_heatmap_image(values_list,
 def generate_2d_graph_image(values_list,
                             dimensions_list, 
                             first_parameter_index,
+<<<<<<< HEAD
                             x_parameter_name = ""):
+=======
+                            second_parameter_index,
+                            x_parameter_name = "", 
+                            y_parameter_name = ""):
+    pass
+    
+    # # Main heatmap
+    # plt.clf()
+    # plt.imshow(np.reshape(values_list, dimensions_list))
+    # plt.xlabel(x_parameter_name, fontsize='x-large')
+    # plt.ylabel('Tremor Intensity', fontsize='x-large')
+>>>>>>> watch
 
     # Compute dimensions
     reshaped_values_list = np.reshape(values_list, dimensions_list)
@@ -78,7 +91,7 @@ def generate_2d_graph_image(values_list,
 
     # Generate image
     pic_iobytes = io.BytesIO()
-    plt.savefig(pic_iobytes, format='jpeg')
+    plt.savefig(pic_iobytes, format='png')
     pic_iobytes.seek(0)
     pic_hash = base64.b64encode(pic_iobytes.read())
 

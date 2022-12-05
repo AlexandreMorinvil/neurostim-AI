@@ -1,0 +1,792 @@
+12-02 20:01:52.532  6006  6067 I TestRunner: started: textIsCorrectAfterFiveSeconds(com.example.neuraldrive.MainActivityTests)
+12-02 20:01:53.102  5880  5880 W android.vendin: Long monitor contention with owner AsyncTask #2 (6064) at void android.os.AsyncTask$SerialExecutor.scheduleNext()(AsyncTask.java:320) waiters=1 in void android.os.AsyncTask$SerialExecutor.execute(java.lang.Runnable) for 195ms
+12-02 20:01:53.204   399   409 I system_server: WaitForGcToComplete blocked HeapTrim on None for 137.845ms
+12-02 20:01:53.256  6006  6071 V UiAutomation: Init UiAutomation@e33d724[id=4, flags=0]
+12-02 20:01:53.402  5880  6064 I Finsky  : [543] fxb.g(1): getDownloads()
+12-02 20:01:53.474  5880  5920 I android.vendin: Waiting for a blocking GC ProfileSaver
+12-02 20:01:53.543  5880  6035 I Finsky  : [516] jog.accept(50): SCH: Scheduling phonesky job Id: 29-29, CT: 1670029311120, Constraints: [{ L: 30000, D: 60000, C: 1, I: 1, N: 0 }]
+12-02 20:01:53.617   399  6074 I OMXClient: IOmx service obtained
+12-02 20:01:53.621   365   910 I OMXMaster: makeComponentInstance(OMX.google.raw.decoder) in android.hardwar process
+12-02 20:01:53.658   365   910 E OMXNodeInstance: getConfig(0xf2dc0cc0:google.raw.decoder, ConfigAndroidVendorExtension(0x6f100004)) ERROR: Undefined(0x80001001)
+12-02 20:01:53.691  5880  5920 I android.vendin: Waiting for a blocking GC ProfileSaver
+12-02 20:01:53.698  5880  5920 I android.vendin: WaitForGcToComplete blocked ProfileSaver on RunEmptyCheckpoint for 223.377ms
+12-02 20:01:53.754   348  4414 D MediaBufferGroup: creating MemoryDealer
+12-02 20:01:53.905  5880  6031 I Finsky  : [512] jqi.apply(93): SCH: Scheduling 0 system job(s)
+12-02 20:01:53.958   285   285 D SurfaceFlinger: Setting power mode 2 on display 8141603649153536
+12-02 20:01:53.959   285   285 D SurfaceFlinger: Finished setting power mode 2 on display 8141603649153536
+12-02 20:01:53.964   174   178 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup36: Permission denied
+12-02 20:01:53.967   615   651 D WearableKeyguard: [KeyguardService]onStartedWakingUp
+12-02 20:01:53.968   615   615 D WearableKeyguard: [KeyguardService]mainHandler massage = 9
+12-02 20:01:53.976   399  2339 W InputDispatcher: Excessive delay in interceptKeyBeforeQueueing; took 81 ms
+12-02 20:01:53.978   615   615 D WearableKeyguard: [KeyguardService]Trying to show lockscreen when it is not enabled or not locked
+12-02 20:01:54.010   399   447 I InputManager-JNI: Viewport [0] to add: local:8141603649153536, isActive: true
+12-02 20:01:54.030   399   505 I InputReader: Reconfiguring input devices, changes=DISPLAY_INFO |
+12-02 20:01:54.031   399   505 I InputReader: Touch device 'virtio_input_multi_touch_9' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.031   399   505 I InputReader: Touch device 'virtio_input_multi_touch_6' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.037   399   505 I InputReader: Touch device 'virtio_input_multi_touch_3' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.039   399   505 I InputReader: Touch device 'virtio_input_multi_touch_10' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.052   399   505 I InputReader: Touch device 'virtio_input_multi_touch_4' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.053   399   505 I InputReader: Device reconfigured: id=9, name='virtio_input_multi_touch_1', size 454x454, orientation 0, mode 1, display id 0
+12-02 20:01:54.055   399   505 I InputReader: Touch device 'virtio_input_multi_touch_11' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.076   399   505 I InputReader: Touch device 'virtio_input_multi_touch_5' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.076   399   505 I InputReader: Touch device 'virtio_input_multi_touch_7' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.076   399   505 I InputReader: Touch device 'virtio_input_multi_touch_2' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.076   399   505 I InputReader: Touch device 'virtio_input_multi_touch_8' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+12-02 20:01:54.160   615   651 D WearableKeyguard: [KeyguardService]onFinishedWakingup
+12-02 20:01:54.253   399   399 W AlarmManager: Unrecognized alarm listener com.android.server.-$$Lambda$DeviceIdleController$pUAsoxLVwpJ9Ac-b6Wbul1k9bIw@1f8d666
+12-02 20:01:54.275   174   178 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup35: Permission denied
+12-02 20:01:54.279   203   203 D Zygote  : Forked child process 6079
+12-02 20:01:54.289   615   651 D WearableKeyguard: [KeyguardService]onDreamingStopped
+12-02 20:01:54.290   399   399 I AmbientService: [3391de6] doOnDreamingStopped
+12-02 20:01:54.290   399   399 D WristGestureCtrl: Starting: GesturesEnabled-false UngazeEnabled-true
+12-02 20:01:54.292   399   399 I AmbientService: [3391de6] handleAutoResumeLocked(showAmbientLiteTransition=true), mAutoResumeActivity=null
+12-02 20:01:54.292   399   399 I AmbientService: [3391de6] canAutoResume: no auto-resume Activity.
+12-02 20:01:54.292   399   399 I AmbientService: [3391de6] handleAutoResumeLocked: unable to auto-resume!
+12-02 20:01:54.293   399   399 D AmbientService: Removing burn in mask
+12-02 20:01:54.343   590   590 D SysUI   : [CarouselTilesController]Tile refresh optimization is enabled.
+12-02 20:01:54.315  5880  6031 W android.vendin: Verification of void jqv.c(jqe) took 133.687ms (3328.67 bytecodes/s) (5008B approximate peak alloc)
+12-02 20:01:54.347  5880  6035 I Finsky  : [516] jog.accept(50): SCH: Scheduling phonesky job Id: 1-1337, CT: 1670029311683, Constraints: [{ L: 0, D: 21690243, C: 1, I: 1, N: 0 }, { L: 0, D: 0, C: 1, I: 1, N: 0 }]
+12-02 20:01:54.353   590   590 D SysUI   : [ConnStatusModule]Bluetooth state: true, Companion connection status: CompanionConnection{connectionStatus=1, connectionType=1}
+12-02 20:01:54.354  1108  5913 D WCS     : [SynchronousComplicationSessionController]onWatchFaceStateChanged isWfInteractive=true
+12-02 20:01:54.363  6079  6079 W ding:backgroun: Unexpected CPU variant for X86 using defaults: x86
+12-02 20:01:54.377  1108  5209 D WCS     : [DataRequester]cancelScheduledUpdates TileConfig{id=0, provider=ComponentInfo{com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.calendar.AgendaTileProviderService}}
+12-02 20:01:54.383  1108  5209 D WCS     : [DataRequester]requestUpdateFromProvider TileConfig{id=0, provider=ComponentInfo{com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.calendar.AgendaTileProviderService}}
+12-02 20:01:54.405   317   325 I adbd    : jdwp connection from 6079
+12-02 20:01:54.428  5880  6064 W android.vendin: Verification of void whl.b() took 162.048ms (240.67 bytecodes/s) (1176B approximate peak alloc)
+12-02 20:01:54.484   399   463 W system_server: Long monitor contention with owner batterystats-handler (462) at void com.android.server.am.BatteryStatsService.lambda$noteScreenState$37$BatteryStatsService(int, long, long, long)(BatteryStatsService.java:918) waiters=0 in void com.android.server.am.BatteryExternalStatsWorker.updateExternalStatsLocked(java.lang.String, int, boolean, boolean, boolean) for 522ms
+12-02 20:01:54.579   174   178 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup36: Permission denied
+12-02 20:01:54.724   399   470 W system_server: Long monitor contention with owner android.fg (444) at void com.android.server.dreams.DreamManagerService$3.run()(DreamManagerService.java:459) waiters=0 in boolean com.android.server.dreams.DreamManagerService.isDreamingInternal() for 463ms
+12-02 20:01:54.728  6079  6079 I ding:backgroun: The ClassLoaderContext is a special shared library.
+12-02 20:01:54.728   174   178 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup35: Permission denied
+12-02 20:01:54.758   399   399 W WearPower: Emulator doesn't support touch disabling inputs, ignoring.
+12-02 20:01:54.758   399   399 I WearPower: [WearTouchMediator] changing touch input to enabled (ON_EMULATOR)
+12-02 20:01:54.759   399   505 I InputReader: Reconfiguring input devices, changes=ENABLED_STATE |
+12-02 20:01:54.763   399   399 W AlarmManagerProxy: Removing unknown listener
+12-02 20:01:54.765  6079  6079 D nativeloader: classloader namespace configured for unbundled vendor apk. library_path=/data/app/~~Wu42lTVMzd4gVeXNJsJf6Q==/com.android.vending-tlmSCTEtyva9iwJsA4F6lg==/lib/x86:/data/app/~~Wu42lTVMzd4gVeXNJsJf6Q==/com.android.vending-tlmSCTEtyva9iwJsA4F6lg==/base.apk!/lib/x86:/data/app/~~Wu42lTVMzd4gVeXNJsJf6Q==/com.android.vending-tlmSCTEtyva9iwJsA4F6lg==/split_config.en.apk!/lib/x86:/data/app/~~Wu42lTVMzd4gVeXNJsJf6Q==/com.android.vending-tlmSCTEtyva9iwJsA4F6lg==/split_config.x86.apk!/lib/x86:/vendor/lib
+12-02 20:01:54.809  5313  5326 I ocess.gservice: CollectorTransition concurrent copying GC freed 1137(127KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 2000KB/2666KB, paused 26.750ms total 648.924ms
+12-02 20:01:54.899  5880  5892 W android.vendin: Suspending all threads took: 100.761ms
+12-02 20:01:54.902  5880  6064 W android.vendin: Verification of void whi.b(wel) took 118.799ms (84.18 bytecodes/s) (832B approximate peak alloc)
+12-02 20:01:54.968  3233  6099 I DeviceStatusMonitor: DeviceStatusMonitor.handleBroadcast():122 onReceive() : Action = android.intent.action.SCREEN_ON
+12-02 20:01:54.972  3233  6099 I DeviceStatusMonitor: DeviceStatusMonitor.updateCountryInfo():138 updateCountryInfo(), notifyAnyway = false
+12-02 20:01:55.040  5880  6027 I Finsky  : [508] jqi.apply(93): SCH: Scheduling 0 system job(s)
+12-02 20:01:53.959   174   174 W Binder:174_2: type=1400 audit(0.0:229): avc: denied { read } for name="wakeup36" dev="sysfs" ino=19119 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+12-02 20:01:55.209  6006  6067 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+12-02 20:01:54.271   174   174 W Binder:174_2: type=1400 audit(0.0:230): avc: denied { read } for name="wakeup35" dev="sysfs" ino=19056 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+12-02 20:01:55.396   590   590 D SysUI   : [AgendaController]loadEvents
+12-02 20:01:55.470   590  2682 D SysUI   : [AgendaController]Fetching event data for window: EventWindow{Fri Dec 02 00:00:00 EST 2022,Sun Dec 04 23:59:59 EST 2022}
+12-02 20:01:55.470   590  2682 D SysUI   : [CwCal]CalendarEventsResolver:queryCalendarEventInstances:window=EventWindow{Fri Dec 02 00:00:00 EST 2022,Sun Dec 04 23:59:59 EST 2022}
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.479   399  4607 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.480   399  4607 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.526   399  4607 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.526   399  4607 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.526   399  4607 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+12-02 20:01:55.586   590   590 D SysUI   : [PrimesSysHealthLogger]Timer SysUiInteractiveSessionDuration took 1244 ms
+12-02 20:01:55.609  1108  5209 D WCS     : [SynchronousComplicationSessionController]onWatchFaceStateChanged isWfInteractive=false
+12-02 20:01:55.858   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fdb9e000 0x3fdc68000]
+12-02 20:01:56.045  6006  6006 W ple.neuraldriv: Verification of kotlin.Lazy kotlin.LazyKt__LazyJVMKt.lazy(kotlin.LazyThreadSafetyMode, kotlin.jvm.functions.Function0) took 244.486ms (261.77 bytecodes/s) (1880B approximate peak alloc)
+12-02 20:01:56.122   399  1197 W system_server: Long monitor contention with owner Binder:399_1A (3684) at boolean com.android.server.am.ActivityManagerService.stopServiceToken(android.content.ComponentName, android.os.IBinder, int)(ActivityManagerService.java:15008) waiters=0 in void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) for 101ms
+12-02 20:01:56.144   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.fitbit.FitbitMobile/com.fitbit.today.TodayMainActivity} attempting to fetch from ResolveInfo
+12-02 20:01:56.144   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.fitbit.FitbitMobile/com.fitbit.today.TodayMainActivity}, not able to add to default recents
+12-02 20:01:56.163   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.fitbit.FitbitMobile/com.fitbit.exercise.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:01:56.163   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.fitbit.FitbitMobile/com.fitbit.exercise.MainActivity}, not able to add to default recents
+12-02 20:01:56.165   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity} attempting to fetch from ResolveInfo
+12-02 20:01:56.167   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity}, not able to add to default recents
+12-02 20:01:56.184  6006  6102 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+12-02 20:01:56.512  6006  6018 I ple.neuraldriv: WaitForGcToComplete blocked RunEmptyCheckpoint on ProfileSaver for 261.585ms
+12-02 20:01:56.579   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.messaging/com.google.android.apps.messaging.main.WearMainActivity} attempting to fetch from ResolveInfo
+12-02 20:01:56.579   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.messaging/com.google.android.apps.messaging.main.WearMainActivity}, not able to add to default recents
+12-02 20:01:56.619  5880  6039 W android.vendin: Long monitor contention with owner bgExecutor #3 (6035) at boolean android.os.MessageQueue.enqueueMessage(android.os.Message, long)(MessageQueue.java:600) waiters=0 in android.os.Message android.os.MessageQueue.next() for 363ms
+12-02 20:01:56.643   399   447 W system_server: Long monitor contention with owner android.anim (448) at void com.android.server.wm.InputMonitor$UpdateInputWindows.run()(InputMonitor.java:154) waiters=0 in void com.android.server.wm.ActivityTaskManagerService.lambda$notifyEnterAnimationComplete$1$ActivityTaskManagerService(android.os.IBinder) for 215ms
+12-02 20:01:56.649   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.dialer/com.google.android.wearable.googledialer.launcher.impl.LauncherActivity} attempting to fetch from ResolveInfo
+12-02 20:01:56.650   590  1658 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched with a Launcher Activity in the task TaskInfo{userId=0 stackId=45 taskId=45 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity } baseActivity=ComponentInfo{com.example.neuraldrive/com.example.neuraldrive.MainActivity} topActivity=ComponentInfo{com.example.neuraldrive/com.example.neuraldrive.MainActivity} origActivity=null realActivity=ComponentInfo{com.example.neuraldrive/com.example.neuraldrive.MainActivity} numActivities=1 lastActiveTime=3959755 supportsSplitScreenMultiWindow=false resizeMode=1 isResizeable=true token=android.window.WindowContainerToken@5f1693c topActivityType=1 pictureInPictureParams=null topActivityInfo=ActivityInfo{64246c5 com.example.neuraldrive.MainActivity} == ActivityLauncherApp{label=NeuralDrive, recent=false, timeLastUsedMs=0, info=android.content.pm.LauncherActivityInfo@4af26dd, iconSupplier=cds@8591252}
+12-02 20:01:56.654   399   399 W system_server: Long monitor contention with owner Binder:399_10 (1197) at void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int)(ActivityManagerService.java:15165) waiters=1 in int com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(android.app.IApplicationThread, java.lang.String, android.content.Intent, java.lang.String, android.content.IIntentReceiver, int, java.lang.String, android.os.Bundle, java.lang.String[], int, android.os.Bundle, boolean, boolean, int) for 532ms
+12-02 20:01:56.727   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.dialer/com.google.android.wearable.googledialer.launcher.impl.LauncherActivity}, not able to add to default recents
+12-02 20:01:56.727   590  1658 D SysUI   : [PrimesSysHealthLogger]Timer GLOBAL_LAUNCHER_LOAD_RECENT_TASKS_TIME took 509 ms
+12-02 20:01:56.728   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.safetyhub/com.google.android.wearable.safety.application.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:01:56.728   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.safetyhub/com.google.android.wearable.safety.application.MainActivity}, not able to add to default recents
+12-02 20:01:56.729   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.maps/com.google.android.apps.gmmwearable.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:01:56.729   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.maps/com.google.android.apps.gmmwearable.MainActivity}, not able to add to default recents
+12-02 20:01:56.734   590   590 D SysUI   : [PendingLauncherAppCombiner]loadAndMergeWithRecents + sessionInfo size:0
+12-02 20:01:56.735   590   590 D SysUI   : [PendingLauncherAppCombiner]loadAndMergeWithAllApps + sessionInfo size:0
+12-02 20:01:56.876   590   590 D SysUI   : [AgendaController]Obtained events in UI thread: []
+12-02 20:01:56.876   590  4853 D SysUI   : [PrimesSysHealthLogger]Timer GLOBAL_LAUNCHER_MERGE_ONGOING_ACTIVITIES_TIME took 143 ms
+12-02 20:01:56.877  6006  6102 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+12-02 20:01:56.881  6006  6102 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+12-02 20:01:56.887   590   590 D SysUI   : [AgendaTileProviderService]sendDataAsync
+12-02 20:01:56.887   590   590 D SysUI   : [AgendaMetricsLogger]eventDataNotPresent
+12-02 20:01:56.889   203   203 I Zygote  : Process 5714 exited due to signal 9 (Killed)
+12-02 20:01:56.895   590  2682 W CwExecutors: Finished  Q:     7 E:  1491 AgendaController.RequestData (Slow)
+12-02 20:01:56.946   399   458 I libprocessgroup: Successfully killed process cgroup uid 10053 pid 5714 in 291ms
+12-02 20:01:56.947  1108  5209 D WCS     : [DataRequester]cancelScheduledUpdates TileConfig{id=0, provider=ComponentInfo{com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.calendar.AgendaTileProviderService}}
+12-02 20:01:56.948  1108  5209 D WCS     : [DataRequester]cancelScheduledUpdates could not find jobId for provider 0
+12-02 20:01:57.027  1108  5209 D WCS     : [DataRequester]updateFinished 0
+12-02 20:01:57.027  1108  5209 D WCS     : [ProviderConnMgr]Unbinding from service
+12-02 20:01:54.575   174   174 W Binder:174_2: type=1400 audit(0.0:231): avc: denied { read } for name="wakeup36" dev="sysfs" ino=19119 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+12-02 20:01:57.098   399   399 W system_server: Long monitor contention with owner android.bg (455) at boolean com.android.server.net.NetworkPolicyManagerService.isUidIdle(int)(NetworkPolicyManagerService.java:4156) waiters=0 in boolean com.android.server.net.NetworkPolicyManagerService$NetworkPolicyManagerInternalImpl.isUidNetworkingBlocked(int, java.lang.String) for 307ms
+12-02 20:01:54.723   174   174 W Binder:174_2: type=1400 audit(0.0:232): avc: denied { read } for name="wakeup35" dev="sysfs" ino=19056 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+12-02 20:01:57.343  1108  5913 D WCS     : [ComplicationController]requestUpdateFromProvider 2
+12-02 20:01:57.343  1108  5913 D WCS     : [DataRequester]cancelScheduledUpdates ComplicationConfig{id=2, watchFaceComponent=ComponentInfo{androidx.wear.watchface.samples.app/androidx.wear.watchface.samples.ExampleCanvasDigitalWatchFaceService}, watchFaceSlotId=2, provider=ComponentInfo{com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.calendar.NextEventProviderService}, type=4, configActionPending=false, enabled=true}
+12-02 20:01:57.352  1108  5913 D WCS     : [DataRequester]requestUpdateFromProvider ComplicationConfig{id=2, watchFaceComponent=ComponentInfo{androidx.wear.watchface.samples.app/androidx.wear.watchface.samples.ExampleCanvasDigitalWatchFaceService}, watchFaceSlotId=2, provider=ComponentInfo{com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.calendar.NextEventProviderService}, type=4, configActionPending=false, enabled=true}
+12-02 20:01:57.383  1108  5209 D WCS     : [DataRequester]Scheduling job for TileConfig{id=0, provider=ComponentInfo{com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.calendar.AgendaTileProviderService}} delay=14400 jobId=2000004
+12-02 20:01:57.388  6006  6006 D LifecycleMonitor: Lifecycle status change: com.example.neuraldrive.MainActivity@2a71c1 in: PRE_ON_CREATE
+12-02 20:01:57.390  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+12-02 20:01:57.515  1108  5913 D WCS     : [DataRequester]scheduleNextUpdate 2
+12-02 20:01:57.582  5880  6025 D DeferrableExecutor: DeferrableExecutor unblocked after max task delay
+12-02 20:01:57.597   590  1658 D SysUI   : [CwCal]CalendarEventsResolver:queryCalendarEventInstances:window=EventWindow{Fri Dec 02 20:01:57 EST 2022,Sat Dec 03 18:01:57 EST 2022}
+12-02 20:01:57.636  6006  6006 D ContentValues: ALREADY GRANTED
+12-02 20:01:57.721  1108  5913 D WCS     : [DataRequester]Scheduling job for ComplicationConfig{id=2, watchFaceComponent=ComponentInfo{androidx.wear.watchface.samples.app/androidx.wear.watchface.samples.ExampleCanvasDigitalWatchFaceService}, watchFaceSlotId=2, provider=ComponentInfo{com.google.android.wearable.sysui/com.google.android.clockwork.sysui.experiences.calendar.NextEventProviderService}, type=4, configActionPending=false, enabled=true} delay=300 jobId=1000017
+12-02 20:01:57.726  6006  6006 D LifecycleMonitor: Lifecycle status change: com.example.neuraldrive.MainActivity@2a71c1 in: CREATED
+12-02 20:01:57.726  6006  6006 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.neuraldrive.MainActivity@2a71c1
+12-02 20:01:57.742  1108  5913 D WCS     : [ComplicationController]requestUpdateFromProvider 4
+12-02 20:01:57.742  1108  5913 D WCS     : [DataRequester]cancelScheduledUpdates ComplicationConfig{id=4, watchFaceComponent=ComponentInfo{androidx.wear.watchface.samples.app/androidx.wear.watchface.samples.ExampleCanvasDigitalWatchFaceService}, watchFaceSlotId=3, provider=ComponentInfo{com.google.android.wearable.app/com.google.android.clockwork.wcs.complications.providers.BatteryProviderService}, type=3, configActionPending=false, enabled=true}
+12-02 20:01:57.743  1108  5913 D WCS     : [DataRequester]requestUpdateFromProvider ComplicationConfig{id=4, watchFaceComponent=ComponentInfo{androidx.wear.watchface.samples.app/androidx.wear.watchface.samples.ExampleCanvasDigitalWatchFaceService}, watchFaceSlotId=3, provider=ComponentInfo{com.google.android.wearable.app/com.google.android.clockwork.wcs.complications.providers.BatteryProviderService}, type=3, configActionPending=false, enabled=true}
+12-02 20:01:57.759  6006  6006 D LifecycleMonitor: Lifecycle status change: com.example.neuraldrive.MainActivity@2a71c1 in: STARTED
+12-02 20:01:57.759  6006  6006 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.neuraldrive.MainActivity@2a71c1
+12-02 20:01:54.727  6079  6079 W ding:background: type=1400 audit(0.0:233): avc: denied { execute } for path="/vendor/framework/oat/x86/androidx.window.sidecar.odex" dev="dm-3" ino=419 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:vendor_framework_file:s0 tclass=file permissive=0 app=com.android.vending
+12-02 20:01:57.772  6006  6109 I System.out: [
+12-02 20:01:57.846  1108  5913 D WCS     : [DataRequester]scheduleNextUpdate 4
+12-02 20:01:58.191  6006  6006 W ple.neuraldriv: Verification of java.lang.Object kotlinx.coroutines.channels.ChannelResult.getOrThrow-impl(java.lang.Object) took 325.114ms (156.87 bytecodes/s) (1480B approximate peak alloc)
+12-02 20:01:58.194  6006  6006 D LifecycleMonitor: Lifecycle status change: com.example.neuraldrive.MainActivity@2a71c1 in: RESUMED
+12-02 20:01:58.194  6006  6006 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.neuraldrive.MainActivity@2a71c1
+12-02 20:01:58.213  1108  5913 D WCS     : [DataRequester]Scheduling job for ComplicationConfig{id=4, watchFaceComponent=ComponentInfo{androidx.wear.watchface.samples.app/androidx.wear.watchface.samples.ExampleCanvasDigitalWatchFaceService}, watchFaceSlotId=3, provider=ComponentInfo{com.google.android.wearable.app/com.google.android.clockwork.wcs.complications.providers.BatteryProviderService}, type=3, configActionPending=false, enabled=true} delay=1200 jobId=1000018
+12-02 20:01:58.396   740  5584 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:11 exec_start_elapsed_seconds: 3962 [CONTEXT service_id=218 ]
+12-02 20:01:58.397  5604  5637 I GCM-GMS : Registering GMS 745476177629
+12-02 20:01:58.402  1108  5913 D WCS     : [ComplicationController]processProviderUpdateResponse 2 ComplicationData{mType=4, mFields=Bundle[mParcelledData.dataSize=880]}
+12-02 20:01:58.402  1108  5913 D WCS     : [DataRequester]updateFinished 2
+12-02 20:01:58.402  1108  5913 D WCS     : [ProviderConnMgr]Unbinding from service
+12-02 20:01:58.417  1108  5913 D WCS     : [ComplicationController]Sending succeeded slotId=2 data=ComplicationData{mType=4, mFields=Bundle[{LONG_TEXT=ComplicationText{mSurroundingText=No upcoming events, mTimeDependentText=null}, ICON=Icon(typ=RESOURCE pkg=com.google.android.wearable.sysui id=0x7f0800f9), IMAGE_STYLE=1, IMAGE_CONTENT_DESCRIPTION=ComplicationText{mSurroundingText=Next event No upcoming events, mTimeDependentText=null}, TAP_ACTION=PendingIntent{50339a3: android.os.BinderProxy@50164a0}}]}
+12-02 20:01:58.418  1108  5913 D WCS     : [ComplicationController]processProviderUpdateResponse 4 ComplicationData{mType=3, mFields=Bundle[{ICON=Icon(typ=RESOURCE pkg=com.google.android.wearable.app id=0x7f080177), IMAGE_CONTENT_DESCRIPTION=ComplicationText{mSurroundingText=Battery: 100%, mTimeDependentText=null}, TAP_ACTION=PendingIntent{200c859: android.os.BinderProxy@5369c1e}, ICON_BURN_IN_PROTECTION=Icon(typ=RESOURCE pkg=com.google.android.wearable.app id=0x7f0800d3), SHORT_TEXT=ComplicationText{mSurroundingText=100%, mTimeDependentText=null}}]}
+12-02 20:01:58.419  1108  5913 D WCS     : [DataRequester]updateFinished 4
+12-02 20:01:58.419  1108  5913 D WCS     : [ProviderConnMgr]Unbinding from service
+12-02 20:01:58.431  1108  5913 D WCS     : [ComplicationController]Sending succeeded slotId=3 data=ComplicationData{mType=3, mFields=Bundle[{ICON=Icon(typ=RESOURCE pkg=com.google.android.wearable.app id=0x7f080177), IMAGE_CONTENT_DESCRIPTION=ComplicationText{mSurroundingText=Battery: 100%, mTimeDependentText=null}, TAP_ACTION=PendingIntent{200c859: android.os.BinderProxy@5369c1e}, ICON_BURN_IN_PROTECTION=Icon(typ=RESOURCE pkg=com.google.android.wearable.app id=0x7f0800d3), SHORT_TEXT=ComplicationText{mSurroundingText=100%, mTimeDependentText=null}}]}
+12-02 20:01:58.462  6079  6079 W ding:backgroun: JIT profile information will not be recorded: profile file does not exist.
+12-02 20:01:58.462  6079  6079 W ding:backgroun: JIT profile information will not be recorded: profile file does not exist.
+12-02 20:01:58.526  6079  6079 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-02 20:01:58.526  6079  6079 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-02 20:01:58.571  5604  5637 W gle.android.gm: Verification of java.lang.String ukk.c(byte[]) took 170.385ms (41.08 bytecodes/s) (800B approximate peak alloc)
+12-02 20:01:58.626  6006  6100 D HostConnection: HostConnection::get() New Host Connection established 0xf080e320, tid 6100
+12-02 20:01:58.636  6006  6100 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+12-02 20:01:58.641   142   142 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+12-02 20:01:58.642  6006  6100 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+12-02 20:01:58.653  6006  6100 D EGL_emulation: eglCreateContext: 0xf0811dc0: maj 3 min 0 rcv 3
+12-02 20:01:58.658  6006  6100 D EGL_emulation: eglMakeCurrent: 0xf0811dc0: ver 3 0 (tinfo 0xf0b73a50) (first time)
+12-02 20:01:58.675   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fdc68000 0x3fdd32000]
+12-02 20:01:58.678   142   142 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+12-02 20:01:58.678  6006  6100 I Gralloc4: mapper 4.x is not supported
+12-02 20:01:58.679  6006  6100 D HostConnection: createUnique: call
+12-02 20:01:58.679  6006  6100 D HostConnection: HostConnection::get() New Host Connection established 0xf08124c0, tid 6100
+12-02 20:01:58.679  6006  6100 D goldfish-address-space: allocate: Ask for block of size 0x100
+12-02 20:01:58.679  6006  6100 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3fbffe000 size 0x2000
+12-02 20:01:58.686  6006  6109 W ple.neuraldriv: Verification of java.lang.Object kotlin.sequences.SequencesKt___SequencesKt.reduceIndexed(kotlin.sequences.Sequence, kotlin.jvm.functions.Function3) took 117.224ms (528.90 bytecodes/s) (1680B approximate peak alloc)
+12-02 20:01:58.695  6006  6100 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+12-02 20:01:58.705   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fdd32000 0x3fddfc000]
+12-02 20:01:58.706   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fddfc000 0x3fdec6000]
+12-02 20:01:58.785  5604  5637 W gle.android.gm: Verification of java.lang.String ukk.j(java.lang.String, java.lang.String, java.lang.String) took 214.502ms (135.20 bytecodes/s) (888B approximate peak alloc)
+12-02 20:01:58.912   399   455 D ArtManagerInternalImpl: /data/misc/iorapd/com.example.neuraldrive/1/com.example.neuraldrive.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+12-02 20:01:58.971   740  5873 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:11 exec_start_elapsed_seconds: 3962 [CONTEXT service_id=218 ]
+12-02 20:01:59.153  6006  6067 W ple.neuraldriv: Verification of java.lang.Object kotlinx.coroutines.DelayKt.awaitCancellation(kotlin.coroutines.Continuation) took 109.138ms (1044.55 bytecodes/s) (2328B approximate peak alloc)
+12-02 20:01:59.165   740  1620 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+12-02 20:01:59.166   740  1620 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+12-02 20:01:59.176   740  1620 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+12-02 20:01:59.176  6079  6079 W ding:backgroun: Verification of void sbv.az(java.io.InputStream, byte[], int) took 184.587ms (124.60 bytecodes/s) (1192B approximate peak alloc)
+12-02 20:01:59.186  3233  3233 I WearInputMethodService: WearInputMethodService.onBindInput():989
+12-02 20:01:59.203  3233  3233 I WearInputMethodService: WearInputMethodService.onFinishInput():2244
+12-02 20:01:59.203  3233  3233 I WearInputMethodService: WearInputMethodService.onStartInput():1777
+12-02 20:01:59.204  3233  3233 I WearInputMethodService: WearInputMethodService.onStartInput():1789 onStartInput(), Dummy InputConnection bound
+12-02 20:01:59.205   399   455 I ActivityTaskManager: Displayed com.example.neuraldrive/.MainActivity: +3s516ms
+12-02 20:01:59.296  5880  6025 W android.vendin: Verification of rim oqi.a(xnx) took 630.362ms (2690.52 bytecodes/s) (18408B approximate peak alloc)
+12-02 20:01:59.297   740  1620 I FontLog : Pulling font file for id = 5, cache size = 3 [CONTEXT service_id=132 ]
+12-02 20:01:59.302  6079  6079 W ding:backgroun: Verification of qsb qsb.m(int, java.lang.Object[]) took 118.526ms (1020.87 bytecodes/s) (2352B approximate peak alloc)
+12-02 20:01:59.308   740  1620 I FontLog : Pulling font file for id = 5, cache size = 3 [CONTEXT service_id=132 ]
+12-02 20:01:59.315  6006  6067 W FileTestStorage: Output properties is not supported.
+12-02 20:01:59.319  6006  6067 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+12-02 20:01:59.362  5604  5632 W gle.android.gm: Verification of void fqw.A(kfq, java.lang.String) took 213.228ms (98.49 bytecodes/s) (1040B approximate peak alloc)
+12-02 20:01:59.382   740   748 I .gms.persisten: ThreadFlipBegin blocked for 67.579ms
+12-02 20:01:59.497  6006  6006 D EventInjectionStrategy: Creating injection strategy with input manager.
+12-02 20:01:59.497  6006  6006 W ple.neuraldriv: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+12-02 20:01:59.497  6006  6006 W ple.neuraldriv: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+12-02 20:01:59.497  6006  6006 W ple.neuraldriv: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+12-02 20:01:59.502  5604  5632 W gle.android.gm: Verification of void fqw.B(android.content.Context, android.os.Bundle) took 139.747ms (264.76 bytecodes/s) (1328B approximate peak alloc)
+12-02 20:01:59.522  6006  6006 W ple.neuraldriv: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+12-02 20:01:59.522  6006  6006 W ple.neuraldriv: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+12-02 20:01:59.522  6006  6006 W ple.neuraldriv: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+12-02 20:01:59.523  6006  6109 I System.out: [
+12-02 20:01:59.524  6006  6109 I chatty  : uid=10065(com.example.neuraldrive) Timer-0 identical 1 line
+12-02 20:01:59.527  6006  6109 I System.out: [
+12-02 20:01:59.677  6006  6117 W ple.neuraldriv: Verification of okhttp3.Response okhttp3.internal.http.RealInterceptorChain.proceed(okhttp3.Request) took 133.897ms (2427.24 bytecodes/s) (4680B approximate peak alloc)
+12-02 20:01:59.716  5880  6025 W android.vendin: Verification of void rad.d(java.lang.StringBuilder, java.lang.Object, java.lang.String) took 418.847ms (100.28 bytecodes/s) (1024B approximate peak alloc)
+12-02 20:01:59.774  6006  6109 I System.out: [{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:01:59","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},
+12-02 20:01:59.846  6006  6006 W ple.neuraldriv: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+12-02 20:01:59.847  6006  6006 W ple.neuraldriv: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+12-02 20:01:59.847  6006  6006 W ple.neuraldriv: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+12-02 20:01:59.860  6006  6006 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() equals string from resource id: <2131820573>}' assertion on view view.getId() is <2131361874/com.example.neuraldrive:id/app_name>
+12-02 20:01:59.867  6006  6118 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:01:59.867  6006  6118 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:156)
+12-02 20:01:59.867  6006  6118 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:01:59.867  6006  6118 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:01:59.867  6006  6118 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:01:59.867  6006  6118 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:01:59.867  6006  6118 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:01:59.868  6006  6118 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.870  6006  6118 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:01:59.870  6006  6118 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:01:59.870  6006  6118 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:01:59.870  6006  6118 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:01:59.870  6006  6118 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:01:59.870  6006  6118 W System.err: Caused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+12-02 20:01:59.870  6006  6118 W System.err: 	at libcore.io.Linux.android_getaddrinfo(Native Method)
+12-02 20:01:59.870  6006  6118 W System.err: 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:73)
+12-02 20:01:59.871  6006  6118 W System.err: 	at libcore.io.BlockGuardOs.android_getaddrinfo(BlockGuardOs.java:202)
+12-02 20:01:59.871  6006  6118 W System.err: 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:73)
+12-02 20:01:59.871  6006  6118 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:135)
+12-02 20:01:59.871  6006  6118 W System.err: 	... 23 more
+12-02 20:01:59.890  6006  6117 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:01:59.892  6006  6117 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)
+12-02 20:01:59.918  6079  6079 W ding:backgroun: Verification of void j$.time.temporal.o.<clinit>() took 380.661ms (149.74 bytecodes/s) (1264B approximate peak alloc)
+12-02 20:01:59.893  6006  6117 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:01:59.929  6006  6117 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:01:59.929  6006  6117 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:01:59.929  6006  6117 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:01:59.929  6006  6117 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:01:59.930  6006  6117 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:01:59.930  6006  6117 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:01:59.930  6006  6117 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:01:59.931  6006  6117 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:01:59.971  6006  6119 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:01:59.971  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)
+12-02 20:01:59.971  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:01:59.971  6006  6119 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.971  6006  6119 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:01:59.972  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.972  6006  6119 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:01:59.972  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.972  6006  6119 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:01:59.972  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.972  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:01:59.972  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:01:59.972  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:01:59.972  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:01:59.972  6006  6119 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:01:59.972  6006  6116 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:01:59.972  6006  6116 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:156)
+12-02 20:01:59.972  6006  6116 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:01:59.973  6006  6116 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:01:59.973  6006  6116 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.974  6006  6116 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:01:59.974  6006  6116 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.974  6006  6116 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:01:59.974  6006  6116 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:01:59.974  6006  6116 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:01:59.974  6006  6116 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:01:59.974  6006  6116 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:01:59.974  6006  6116 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:01:59.975  6006  6116 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:01:59.975  6006  6116 W System.err: Caused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+12-02 20:01:59.975  6006  6116 W System.err: 	at libcore.io.Linux.android_getaddrinfo(Native Method)
+12-02 20:01:59.975  6006  6116 W System.err: 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:73)
+12-02 20:01:59.975  6006  6116 W System.err: 	at libcore.io.BlockGuardOs.android_getaddrinfo(BlockGuardOs.java:202)
+12-02 20:01:59.975  6006  6116 W System.err: 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:73)
+12-02 20:01:59.975  6006  6116 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:135)
+12-02 20:01:59.975  6006  6116 W System.err: 	... 23 more
+12-02 20:02:00.056  5880  6025 W android.vendin: Verification of void qxy.<init>(int, int, int) took 339.218ms (29.48 bytecodes/s) (768B approximate peak alloc)
+12-02 20:02:00.060  5880  6025 V HashedNamesTransmitter: unhashed: # xnx@3a675d4d
+12-02 20:02:00.063  6006  6119 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:02:00.063  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)
+12-02 20:02:00.063  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:02:00.063  6006  6119 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:02:00.063  6006  6119 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:02:00.063  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:02:00.063  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:02:00.063  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:02:00.063  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:02:00.063  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:02:00.063  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:02:00.064  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:02:00.064  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:02:00.064  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:02:00.064  6006  6119 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:02:00.069  6079  6079 I Finsky:background: [2] edv.fI(6): Process created at version: 33.2.12-26 [5] [PR] 487986790
+12-02 20:02:00.085  5604  5632 W gle.android.gm: Verification of int fqn.a(android.content.Context, com.google.android.gms.auth.HasCapabilitiesRequest) took 579.962ms (206.91 bytecodes/s) (2344B approximate peak alloc)
+12-02 20:02:00.114   399   448 W system_server: Long monitor contention with owner Binder:399_10 (1197) at void com.android.server.wm.TaskChangeNotificationController.forAllLocalListeners(com.android.server.wm.TaskChangeNotificationController$TaskStackConsumer, android.os.Message)(TaskChangeNotificationController.java:351) waiters=1 in void com.android.server.wm.InputMonitor$UpdateInputWindows.run() for 189ms
+12-02 20:02:00.222   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fdb9e000 0x3fdc68000]
+12-02 20:02:00.239   740   748 I .gms.persisten: Background young concurrent copying GC freed 30618(1825KB) AllocSpace objects, 0(0B) LOS objects, 12% free, 11MB/13MB, paused 1.958ms total 1.059s
+12-02 20:02:00.274  6006  6109 I System.out: [{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},{"time":"02/12/2022 08:02:00","acc_x":"0.0","acc_y":"9.776321","acc_z":"0.812345","gir_x":"0.0","gir_y":"0.0","gir_z":"0.0"},
+12-02 20:02:00.361   740   750 W System  : A resource failed to call close.
+12-02 20:02:00.362   740   750 I chatty  : uid=10053(com.google.android.gms) FinalizerDaemon identical 9 lines
+12-02 20:02:00.362   740   750 W System  : A resource failed to call close.
+12-02 20:02:00.364   203   203 D Zygote  : Forked child process 6124
+12-02 20:02:00.416  6124  6124 W droid.deskcloc: Unexpected CPU variant for X86 using defaults: x86
+12-02 20:02:00.426   317   325 I adbd    : jdwp connection from 6124
+12-02 20:02:00.503   203   203 D Zygote  : Forked child process 6140
+12-02 20:02:00.514  6140  6140 W d.configupdate: Unexpected CPU variant for X86 using defaults: x86
+12-02 20:02:00.530   317   325 I adbd    : jdwp connection from 6140
+12-02 20:02:00.562  6140  6140 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.606   399   447 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.607   399   447 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:00.671  6006  6006 D LifecycleMonitor: Lifecycle status change: com.example.neuraldrive.MainActivity@2a71c1 in: PAUSED
+12-02 20:02:00.671  6006  6006 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.example.neuraldrive.MainActivity@2a71c1
+12-02 20:02:00.687  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e in: PRE_ON_CREATE
+12-02 20:02:00.688  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e
+12-02 20:02:00.708  5880  6025 W android.vendin: Verification of void xna.<clinit>() took 646.523ms (20.11 bytecodes/s) (848B approximate peak alloc)
+12-02 20:02:00.711  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e in: CREATED
+12-02 20:02:00.722   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.fitbit.FitbitMobile/com.fitbit.today.TodayMainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:00.722   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.fitbit.FitbitMobile/com.fitbit.today.TodayMainActivity}, not able to add to default recents
+12-02 20:02:00.723   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.fitbit.FitbitMobile/com.fitbit.exercise.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:00.727  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e
+12-02 20:02:00.730   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.fitbit.FitbitMobile/com.fitbit.exercise.MainActivity}, not able to add to default recents
+12-02 20:02:00.730  6124  6124 I droid.deskcloc: The ClassLoaderContext is a special shared library.
+12-02 20:02:00.730   590  1658 E SysUI   : [RecentTaskLauncherApp]Couldn't resolve any Activity for task TaskInfo{userId=0 stackId=46 taskId=46 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity } baseActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} topActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} origActivity=null realActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} numActivities=1 lastActiveTime=3964435 supportsSplitScreenMultiWindow=false resizeMode=1 isResizeable=true token=android.window.WindowContainerToken@f278bf6 topActivityType=1 pictureInPictureParams=null topActivityInfo=ActivityInfo{6bfbbf7 androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity}
+12-02 20:02:00.731   590  1658 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched task with the only Launcher in the package TaskInfo{userId=0 stackId=46 taskId=46 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity } baseActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} topActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} origActivity=null realActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} numActivities=1 lastActiveTime=3964435 supportsSplitScreenMultiWindow=false resizeMode=1 isResizeable=true token=android.window.WindowContainerToken@f278bf6 topActivityType=1 pictureInPictureParams=null topActivityInfo=ActivityInfo{6bfbbf7 androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} == ActivityLauncherApp{label=NeuralDrive, recent=false, timeLastUsedMs=0, info=android.content.pm.LauncherActivityInfo@4af26dd, iconSupplier=cds@8591252}
+12-02 20:02:00.731   590  1658 D SysUI   : [PrimesSysHealthLogger]Timer GLOBAL_LAUNCHER_LOAD_RECENT_TASKS_TIME took 9 ms
+12-02 20:02:00.732   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:00.732   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity}, not able to add to default recents
+12-02 20:02:00.733   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.messaging/com.google.android.apps.messaging.main.WearMainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:00.734   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.messaging/com.google.android.apps.messaging.main.WearMainActivity}, not able to add to default recents
+12-02 20:02:00.737  6006  6119 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:02:00.737  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)
+12-02 20:02:00.738  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:02:00.738  6006  6119 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:02:00.738  6006  6119 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:02:00.738  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:02:00.753   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.dialer/com.google.android.wearable.googledialer.launcher.impl.LauncherActivity} attempting to fetch from ResolveInfo
+12-02 20:02:00.753   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.dialer/com.google.android.wearable.googledialer.launcher.impl.LauncherActivity}, not able to add to default recents
+12-02 20:02:00.756  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:02:00.756  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e in: STARTED
+12-02 20:02:00.757  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:02:00.757  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:02:00.757   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.safetyhub/com.google.android.wearable.safety.application.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:00.757   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.safetyhub/com.google.android.wearable.safety.application.MainActivity}, not able to add to default recents
+12-02 20:02:00.757   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.maps/com.google.android.apps.gmmwearable.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:00.757   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.maps/com.google.android.apps.gmmwearable.MainActivity}, not able to add to default recents
+12-02 20:02:00.759   590   590 D SysUI   : [PendingLauncherAppCombiner]loadAndMergeWithRecents + sessionInfo size:0
+12-02 20:02:00.759   590   590 D SysUI   : [PendingLauncherAppCombiner]loadAndMergeWithAllApps + sessionInfo size:0
+12-02 20:02:00.761   590  4853 D SysUI   : [PrimesSysHealthLogger]Timer GLOBAL_LAUNCHER_MERGE_ONGOING_ACTIVITIES_TIME took 3 ms
+12-02 20:02:00.766  6140  6140 I d.configupdate: The ClassLoaderContext is a special shared library.
+12-02 20:02:00.767  6140  6140 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/ConfigUpdater/lib/x86:/product/lib:/system/product/lib
+12-02 20:02:00.772  6006  6109 I System.out: [
+12-02 20:02:00.776  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e
+12-02 20:02:00.777  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:02:00.777  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:02:00.777  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:02:00.777  6006  6119 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:02:00.778  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:00.778  6006  6119 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:02:00.778  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:00.778  6006  6119 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:02:00.778  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:00.778  6006  6119 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:02:00.778  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:00.778  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:02:00.778  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:02:00.778  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:02:00.778  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:02:00.778  6006  6119 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:02:00.806  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e in: RESUMED
+12-02 20:02:00.806  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e
+12-02 20:02:00.816  6124  6124 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-02 20:02:00.816  6124  6124 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-02 20:02:00.877  6079  6079 W ding:backgroun: Verification of java.lang.Object env.e() took 108.931ms (30624.89 bytecodes/s) (37912B approximate peak alloc)
+12-02 20:02:00.887  6140  6140 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-02 20:02:00.887  6140  6140 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-02 20:02:01.056   740  5873 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:11 result: 1 elapsed_millis: 2576 uptime_millis: 2576 exec_start_elapsed_seconds: 3962 [CONTEXT service_id=218 ]
+12-02 20:02:01.086  6006  6119 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:02:01.095  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)
+12-02 20:02:01.095  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:02:01.095  6006  6119 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:02:01.096  6006  6119 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:02:01.097  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:02:01.097  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:02:01.097  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:02:01.097  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:02:01.098  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:02:01.098  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:02:01.098  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:02:01.098  6006  6119 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:02:01.104  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.104  6006  6119 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:02:01.107  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.108  6006  6119 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:02:01.108  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.111  6006  6119 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:02:01.111  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.111  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:02:01.113  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:02:01.113  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:02:01.113  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:02:01.113  6006  6119 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:02:01.210   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fdec6000 0x3fdf90000]
+12-02 20:02:01.216   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fdf90000 0x3fe05a000]
+12-02 20:02:01.226   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fe05a000 0x3fe124000]
+12-02 20:02:01.278  6006  6109 I System.out: [
+12-02 20:02:01.323  6006  6119 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:02:01.323  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)
+12-02 20:02:01.323  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:02:01.323  6006  6119 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:02:01.323  6006  6119 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:02:01.323  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:02:01.324  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:02:01.324  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:02:01.324  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:02:01.324  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:02:01.324  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:02:01.324  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:02:01.324  6006  6119 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:02:01.324  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.324  6006  6119 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:02:01.358   399   455 I ActivityTaskManager: Displayed com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity: +1s349ms
+12-02 20:02:01.359  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.359  6006  6119 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:02:01.359  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.359  6006  6119 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:02:01.359  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.359  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:02:01.359  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:02:01.359  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:02:01.359  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:02:01.359  6006  6119 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:02:01.369  3233  3233 I WearInputMethodService: WearInputMethodService.onFinishInput():2244
+12-02 20:02:01.369  3233  3233 I WearInputMethodService: WearInputMethodService.onStartInput():1777
+12-02 20:02:01.369  3233  3233 I WearInputMethodService: WearInputMethodService.onStartInput():1789 onStartInput(), Dummy InputConnection bound
+12-02 20:02:01.435  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e in: PAUSED
+12-02 20:02:01.436  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e
+12-02 20:02:01.440   399  3684 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.441   399  3684 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.441   399  3684 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.442   399  3684 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.442   399  3684 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.442   399  3684 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.442   399  3684 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.442   399  3684 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.442   399  3684 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.443   399  3684 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.443   399  3684 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.443   399  3684 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.443   399  3684 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.443   399  3684 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.443   399  3684 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.443   399  3684 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.444   399  3684 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.444   399  3684 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.444   399  3684 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.444   399  3684 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:01.466  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592 in: PRE_ON_CREATE
+12-02 20:02:01.467  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592
+12-02 20:02:01.475   399   456 W system_server: Long monitor contention with owner Binder:399_1F (5508) at android.app.ContentProviderHolder com.android.server.am.ActivityManagerService.getContentProviderImpl(android.app.IApplicationThread, java.lang.String, android.os.IBinder, int, java.lang.String, java.lang.String, boolean, int)(ActivityManagerService.java:7389) waiters=0 in void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) for 113ms
+12-02 20:02:01.505  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592 in: CREATED
+12-02 20:02:01.507  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592
+12-02 20:02:01.514  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592 in: STARTED
+12-02 20:02:01.515  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592
+12-02 20:02:01.519  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592 in: RESUMED
+12-02 20:02:01.520  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592
+12-02 20:02:01.631  5604  5637 W gle.android.gm: Verification of void ukg.<init>(android.content.Context) took 211.541ms (170.18 bytecodes/s) (1304B approximate peak alloc)
+12-02 20:02:01.754   399   728 W system_server: Long monitor contention with owner Binder:399_9 (781) at void com.android.server.am.ActivityManagerService.notifyPackageUse(java.lang.String, int)(ActivityManagerService.java:3123) waiters=2 in int com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(android.app.IApplicationThread, java.lang.String, android.content.Intent, java.lang.String, android.content.IIntentReceiver, int, java.lang.String, android.os.Bundle, java.lang.String[], int, android.os.Bundle, boolean, boolean, int) for 154ms
+12-02 20:02:01.778   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fdb9e000 0x3fdc68000]
+12-02 20:02:01.779  6006  6109 I System.out: [
+12-02 20:02:01.800   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fe124000 0x3fe1ee000]
+12-02 20:02:01.856  6079  6090 W ding:backgroun: Suspending all threads took: 30.291ms
+12-02 20:02:01.860   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fe1ee000 0x3fe2b8000]
+12-02 20:02:01.887  5880  6035 W android.vendin: Verification of void jve.<init>(android.content.Context, mit, ggq, brd, gbp, iiz, oma, mhm, jvw, jvf, kpj, qkk, rgb, int, byte[], byte[], byte[], byte[], byte[], byte[]) took 181.032ms (491.63 bytecodes/s) (2144B approximate peak alloc)
+12-02 20:02:01.904  6006  6119 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:02:01.905  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)
+12-02 20:02:01.905  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:02:01.905  6006  6119 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:02:01.905  6006  6119 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:02:01.905  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:02:01.905  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:02:01.905  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:02:01.905  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:02:01.905  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:02:01.905  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:02:01.905  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:02:01.905  6006  6119 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:02:01.906  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.906  6006  6119 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:02:01.906  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.906  6006  6119 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:02:01.906  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.906  6006  6119 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:02:01.906  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:01.906  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:02:01.906  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:02:01.907  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:02:01.907  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:02:01.907  6006  6119 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:02:01.980  6006  6006 D LifecycleMonitor: Lifecycle status change: com.example.neuraldrive.MainActivity@2a71c1 in: STOPPED
+12-02 20:02:01.980  6006  6006 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.example.neuraldrive.MainActivity@2a71c1
+12-02 20:02:02.021  3233  3233 I WearInputMethodService: WearInputMethodService.onFinishInput():2244
+12-02 20:02:02.022  3233  3233 I WearInputMethodService: WearInputMethodService.onStartInput():1777
+12-02 20:02:02.027  3233  3233 I WearInputMethodService: WearInputMethodService.onStartInput():1789 onStartInput(), Dummy InputConnection bound
+12-02 20:02:02.141   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.fitbit.FitbitMobile/com.fitbit.today.TodayMainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:02.141   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.fitbit.FitbitMobile/com.fitbit.today.TodayMainActivity}, not able to add to default recents
+12-02 20:02:02.149   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.fitbit.FitbitMobile/com.fitbit.exercise.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:02.149   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.fitbit.FitbitMobile/com.fitbit.exercise.MainActivity}, not able to add to default recents
+12-02 20:02:02.151   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:02.152   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity}, not able to add to default recents
+12-02 20:02:02.172   590  1658 E SysUI   : [RecentTaskLauncherApp]Couldn't resolve any Activity for task TaskInfo{userId=0 stackId=46 taskId=46 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity } baseActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} topActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} origActivity=null realActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} numActivities=2 lastActiveTime=3965704 supportsSplitScreenMultiWindow=false resizeMode=1 isResizeable=true token=android.window.WindowContainerToken@f278bf6 topActivityType=1 pictureInPictureParams=null topActivityInfo=ActivityInfo{5b6473 androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}
+12-02 20:02:02.172   590  1658 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched task with the only Launcher in the package TaskInfo{userId=0 stackId=46 taskId=46 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity } baseActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} topActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} origActivity=null realActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} numActivities=2 lastActiveTime=3965704 supportsSplitScreenMultiWindow=false resizeMode=1 isResizeable=true token=android.window.WindowContainerToken@f278bf6 topActivityType=1 pictureInPictureParams=null topActivityInfo=ActivityInfo{5b6473 androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} == ActivityLauncherApp{label=NeuralDrive, recent=false, timeLastUsedMs=0, info=android.content.pm.LauncherActivityInfo@4af26dd, iconSupplier=cds@8591252}
+12-02 20:02:02.172   590  1658 D SysUI   : [PrimesSysHealthLogger]Timer GLOBAL_LAUNCHER_LOAD_RECENT_TASKS_TIME took 83 ms
+12-02 20:02:02.221  6006  6006 D LifecycleMonitor: Lifecycle status change: com.example.neuraldrive.MainActivity@2a71c1 in: DESTROYED
+12-02 20:02:02.221  6006  6006 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+12-02 20:02:02.274  6006  6109 I System.out: [
+12-02 20:02:02.299   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.messaging/com.google.android.apps.messaging.main.WearMainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:02.299   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.messaging/com.google.android.apps.messaging.main.WearMainActivity}, not able to add to default recents
+12-02 20:02:02.308   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.dialer/com.google.android.wearable.googledialer.launcher.impl.LauncherActivity} attempting to fetch from ResolveInfo
+12-02 20:02:02.309   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.dialer/com.google.android.wearable.googledialer.launcher.impl.LauncherActivity}, not able to add to default recents
+12-02 20:02:02.311  5880  6030 I Finsky  : [511] drl.run(18): Cannot disable service: mio
+12-02 20:02:02.314   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.safetyhub/com.google.android.wearable.safety.application.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:02.314   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.safetyhub/com.google.android.wearable.safety.application.MainActivity}, not able to add to default recents
+12-02 20:02:02.314  5880  6030 I Finsky  : [511] drl.run(18): Cannot disable service: mij
+12-02 20:02:02.324   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.maps/com.google.android.apps.gmmwearable.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:02.324   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.maps/com.google.android.apps.gmmwearable.MainActivity}, not able to add to default recents
+12-02 20:02:02.325   590   590 D SysUI   : [PendingLauncherAppCombiner]loadAndMergeWithRecents + sessionInfo size:0
+12-02 20:02:02.325   590   590 D SysUI   : [PendingLauncherAppCombiner]loadAndMergeWithAllApps + sessionInfo size:0
+12-02 20:02:02.327   590  5516 D SysUI   : [PrimesSysHealthLogger]Timer GLOBAL_LAUNCHER_MERGE_ONGOING_ACTIVITIES_TIME took 2 ms
+12-02 20:02:02.327  6079  6079 W ding:backgroun: Verification of tmq tmg.L() took 332.949ms (9.01 bytecodes/s) (768B approximate peak alloc)
+12-02 20:02:02.371  5604  5637 W gle.android.gm: Verification of void ukc.e() took 734.743ms (55.80 bytecodes/s) (1504B approximate peak alloc)
+12-02 20:02:02.384  6006  6119 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:02:02.384  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:156)
+12-02 20:02:02.397  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:02:02.401  6006  6119 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:02:02.401  6006  6119 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:02:02.401  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:02:02.401  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:02:02.405  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:02:02.405  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:02:02.405  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:02:02.405  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:02:02.405  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:02:02.406  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:02:02.406  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:02:02.406  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:02:02.406  6006  6119 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:02:02.406  6006  6119 W System.err: Caused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+12-02 20:02:02.406  6006  6119 W System.err: 	at libcore.io.Linux.android_getaddrinfo(Native Method)
+12-02 20:02:02.406  6006  6119 W System.err: 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:73)
+12-02 20:02:02.406  6006  6119 W System.err: 	at libcore.io.BlockGuardOs.android_getaddrinfo(BlockGuardOs.java:202)
+12-02 20:02:02.406  6006  6119 W System.err: 	at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:73)
+12-02 20:02:02.407  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:135)
+12-02 20:02:02.407  6006  6119 W System.err: 	... 23 more
+12-02 20:02:02.416   399   458 I libprocessgroup: Successfully killed process cgroup uid 10053 pid 5657 in 1221ms
+12-02 20:02:02.417   203   203 I Zygote  : Process 5657 exited due to signal 9 (Killed)
+12-02 20:02:02.418  5880  6035 W android.vendin: Verification of void jve.c(java.lang.String) took 529.733ms (1512.08 bytecodes/s) (10456B approximate peak alloc)
+12-02 20:02:02.482   221   255 D goldfish-address-space: claimShared: Ask to claim region [0x3fe2b8000 0x3fe382000]
+12-02 20:02:02.522   790   790 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+12-02 20:02:02.522   790   790 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+12-02 20:02:02.567  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e in: STOPPED
+12-02 20:02:02.599  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e
+12-02 20:02:02.724  3233  3233 I WearInputMethodService: WearInputMethodService.onBindInput():989
+12-02 20:02:02.730  3233  3233 I WearInputMethodService: WearInputMethodService.onFinishInput():2244
+12-02 20:02:02.730  3233  3233 I WearInputMethodService: WearInputMethodService.onStartInput():1777
+12-02 20:02:02.730  3233  3233 I WearInputMethodService: WearInputMethodService.onStartInput():1789 onStartInput(), Dummy InputConnection bound
+12-02 20:02:02.776  6006  6109 I System.out: [
+12-02 20:02:02.779  6006  6119 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:02:02.779  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)
+12-02 20:02:02.779  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:02:02.779  6006  6119 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:02:02.779  6006  6119 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:02:02.779  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:02:02.779  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:02:02.779  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:02:02.779  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:02:02.780  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:02:02.780  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:02:02.780  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:02:02.780  6006  6119 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:02:02.855  5880  6031 W android.vendin: Verification of void rsy.<clinit>() took 363.035ms (35.81 bytecodes/s) (848B approximate peak alloc)
+12-02 20:02:02.872   399   455 I ActivityTaskManager: Displayed com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +505ms
+12-02 20:02:02.872   399  3684 W system_server: Long monitor contention with owner Binder:399_10 (1197) at int com.android.server.am.ActivityManagerService.bindIsolatedService(android.app.IApplicationThread, android.os.IBinder, android.content.Intent, java.lang.String, android.app.IServiceConnection, int, java.lang.String, java.lang.String, int)(ActivityManagerService.java:15116) waiters=0 in void com.android.server.am.ActivityManagerService.finishReceiver(android.os.IBinder, int, java.lang.String, android.os.Bundle, boolean, int) for 224ms
+12-02 20:02:02.873  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e in: DESTROYED
+12-02 20:02:02.874   399  5508 W system_server: Long monitor contention with owner Binder:399_10 (1197) at int com.android.server.am.ActivityManagerService.bindIsolatedService(android.app.IApplicationThread, android.os.IBinder, android.content.Intent, java.lang.String, android.app.IServiceConnection, int, java.lang.String, java.lang.String, int)(ActivityManagerService.java:15116) waiters=1 in void com.android.server.am.ActivityManagerService$AppDeathRecipient.binderDied() for 460ms
+12-02 20:02:02.874  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity@395982e
+12-02 20:02:02.907  6006  6018 I ple.neuraldriv: Background concurrent copying GC freed 62423(5315KB) AllocSpace objects, 79(1488KB) LOS objects, 24% free, 3646KB/4861KB, paused 68.341ms total 1.442s
+12-02 20:02:03.006  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592 in: PAUSED
+12-02 20:02:03.013  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592
+12-02 20:02:03.025   399   409 I system_server: Background young concurrent copying GC freed 49168(3100KB) AllocSpace objects, 15(428KB) LOS objects, 19% free, 12MB/16MB, paused 1.594ms total 1.309s
+12-02 20:02:03.036   399  1195 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.036   399  1195 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.036   399  1195 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.036   399  1195 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.037   399  1195 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.037   399  1195 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.037   399  1195 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.037   399  1195 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.037   399  1195 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.037   399  1195 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.037   399  1195 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.037   399  1195 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.037   399  1195 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.038   399  1195 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.038   399  1195 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.038   399  1195 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.038   399  1195 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.038   399  1195 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.038   399  1195 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.038   399  1195 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+12-02 20:02:03.148   590   590 D SysUI   : [FullViewHunStarter]detachWindow()
+12-02 20:02:03.184  1108  5913 D WCS     : [SynchronousComplicationSessionController]onWatchFaceStateChanged isWfInteractive=true
+12-02 20:02:03.188  6006  6006 I Choreographer: Skipped 36 frames!  The application may be doing too much work on its main thread.
+12-02 20:02:03.228   203   203 I Zygote  : Process 5823 exited due to signal 9 (Killed)
+12-02 20:02:03.237   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.fitbit.FitbitMobile/com.fitbit.today.TodayMainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:03.237   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.fitbit.FitbitMobile/com.fitbit.today.TodayMainActivity}, not able to add to default recents
+12-02 20:02:03.239   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.fitbit.FitbitMobile/com.fitbit.exercise.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:03.239   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.fitbit.FitbitMobile/com.fitbit.exercise.MainActivity}, not able to add to default recents
+12-02 20:02:03.244   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:03.244   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity}, not able to add to default recents
+12-02 20:02:03.245   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.messaging/com.google.android.apps.messaging.main.WearMainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:03.245   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.messaging/com.google.android.apps.messaging.main.WearMainActivity}, not able to add to default recents
+12-02 20:02:03.246   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.dialer/com.google.android.wearable.googledialer.launcher.impl.LauncherActivity} attempting to fetch from ResolveInfo
+12-02 20:02:03.246   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.dialer/com.google.android.wearable.googledialer.launcher.impl.LauncherActivity}, not able to add to default recents
+12-02 20:02:03.246   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.safetyhub/com.google.android.wearable.safety.application.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:03.246   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.safetyhub/com.google.android.wearable.safety.application.MainActivity}, not able to add to default recents
+12-02 20:02:03.247   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.maps/com.google.android.apps.gmmwearable.MainActivity} attempting to fetch from ResolveInfo
+12-02 20:02:03.247   590   590 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ResolveInfo for {com.google.android.apps.maps/com.google.android.apps.gmmwearable.MainActivity}, not able to add to default recents
+12-02 20:02:03.247   590   590 D SysUI   : [PendingLauncherAppCombiner]loadAndMergeWithRecents + sessionInfo size:0
+12-02 20:02:03.247   590   590 D SysUI   : [PendingLauncherAppCombiner]loadAndMergeWithAllApps + sessionInfo size:0
+12-02 20:02:03.264  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592 in: STOPPED
+12-02 20:02:03.271  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592
+12-02 20:02:03.272  6006  6109 I System.out: [
+12-02 20:02:03.276  6006  6119 W System.err: java.net.UnknownHostException: Unable to resolve host "258.54.87.52": No address associated with hostname
+12-02 20:02:03.276  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:124)
+12-02 20:02:03.276  6006  6119 W System.err: 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:103)
+12-02 20:02:03.276  6006  6119 W System.err: 	at java.net.InetAddress.getAllByName(InetAddress.java:1152)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+12-02 20:02:03.277   590  1658 E SysUI   : [RecentTaskLauncherApp]Couldn't resolve any Activity for task TaskInfo{userId=0 stackId=46 taskId=46 displayId=0 isRunning=false baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} numActivities=0 lastActiveTime=3966871 supportsSplitScreenMultiWindow=false resizeMode=1 isResizeable=true token=android.window.WindowContainerToken@f278bf6 topActivityType=1 pictureInPictureParams=null topActivityInfo=null
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+12-02 20:02:03.277   590  1658 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched task with the only Launcher in the package TaskInfo{userId=0 stackId=46 taskId=46 displayId=0 isRunning=false baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity} numActivities=0 lastActiveTime=3966871 supportsSplitScreenMultiWindow=false resizeMode=1 isResizeable=true token=android.window.WindowContainerToken@f278bf6 topActivityType=1 pictureInPictureParams=null topActivityInfo=null == ActivityLauncherApp{label=NeuralDrive, recent=false, timeLastUsedMs=0, info=android.content.pm.LauncherActivityInfo@4af26dd, iconSupplier=cds@8591252}
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:03.277   590  1658 D SysUI   : [PrimesSysHealthLogger]Timer GLOBAL_LAUNCHER_LOAD_RECENT_TASKS_TIME took 40 ms
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:03.277  6006  6119 W System.err: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+12-02 20:02:03.278  6006  6119 W System.err: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+12-02 20:02:03.278  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+12-02 20:02:03.278  6006  6119 W System.err: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+12-02 20:02:03.278  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+12-02 20:02:03.278  6006  6119 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+12-02 20:02:03.278  6006  6119 W System.err: 	at java.lang.Thread.run(Thread.java:923)
+12-02 20:02:03.280   590  5940 D SysUI   : [PrimesSysHealthLogger]Timer GLOBAL_LAUNCHER_MERGE_ONGOING_ACTIVITIES_TIME took 1 ms
+12-02 20:02:03.280  5880  6035 W android.vendin: Verification of void kdz.l(java.util.concurrent.atomic.AtomicBoolean, fvb, boolean, fvo, fvg, fvh, long, int, android.net.Uri, java.util.concurrent.Exchanger) took 358.154ms (890.68 bytecodes/s) (7192B approximate peak alloc)
+12-02 20:02:03.311  6006  6006 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592 in: DESTROYED
+12-02 20:02:03.312  6006  6006 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.example.neuraldrive/.MainActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.example.neuraldrive/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@7018592
+12-02 20:02:03.320   740  5874 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 3967 [CONTEXT service_id=218 ]
+12-02 20:02:03.372  6006  6067 I TestRunner: finished: textIsCorrectAfterFiveSeconds(com.example.neuraldrive.MainActivityTests)

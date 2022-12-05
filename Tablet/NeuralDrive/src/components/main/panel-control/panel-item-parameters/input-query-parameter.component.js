@@ -1,17 +1,18 @@
-import React, {useEffect, useState} from 'react';
-import {StyleSheet, View} from 'react-native';
-import {Button, Text, TextInput} from 'react-native-paper';
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, View } from 'react-native';
+import { Button, Text, TextInput } from 'react-native-paper';
 
-import {SettingsMessageType} from '../../../../const/settings';
-import {COLOR_BACKGROUND} from '../../../../styles/colors.style';
+import { SettingsMessageType } from '../../../../const/settings';
+import { COLOR_BACKGROUND } from '../../../../styles/colors.style';
 import MessageBubble from '../../../message-bubble.component';
 
 const TEXT_INSERT_VALUE = `Insert value`;
-const TEXT_SUGGESTED_VALUE = value => `Suggest : ${value}`;
-
+const TEXT_SUGGESTED_VALUE = value => `Sug : ${value}`;
 const TEXT_OLD_VALUE_BUTTON = 'Old';
 
-const InputQueryParameter = ({setParentValueFunction, ...props}) => {
+const IMPOSED_VALUE_TYPE_SUGGESTED = 'suggested';
+
+const InputQueryParameter = ({ setParentValueFunction, ...props }) => {
   /**
    * Props
    */
@@ -20,7 +21,7 @@ const InputQueryParameter = ({setParentValueFunction, ...props}) => {
     isFirstInput,
     parameter,
     previousValue,
-    ref,
+    parentSubject,
     suggestedValue,
     value,
     style,
@@ -32,17 +33,11 @@ const InputQueryParameter = ({setParentValueFunction, ...props}) => {
   const [stateIsDisabled, setStateIsDisabled] = useState(isDisabled);
   const [stateIsFirstInput, setStateIsFirstInput] = useState(isFirstInput);
   const [stateParameter, setStateParameter] = useState(parameter);
-  const [stateSuggestedValue, setStateSuggestedValue] =
-    useState(suggestedValue);
+  const [stateSuggestedValue, setStateSuggestedValue] = useState(suggestedValue);
   const [stateValue, setStateValue] = useState(String(value));
   const [statePreviousValue, setStatePreviousValue] = useState(previousValue);
-
-  const [stateInvalidMessageReason, setStateInvalidMessageReason] =
-    useState('');
-  const [
-    stateMustDisplayInvalidityReason,
-    setStateMustDisplayInvalidityReason,
-  ] = useState(false);
+  const [stateInvalidMessageReason, setStateInvalidMessageReason] = useState('');
+  const [stateMustDisplayInvalidityReason, setStateMustDisplayInvalidityReason] = useState(false);
   const [stateIsInFocus, setStateIsInFocus] = useState(true);
   const [stateLabelText, setStateLabelText] = useState(TEXT_INSERT_VALUE);
 
@@ -55,7 +50,7 @@ const InputQueryParameter = ({setParentValueFunction, ...props}) => {
 
   const setValue = newValue => {
     updateMustDisplayInvalidityMessage(newValue);
-    const {isAccepted, reason} = stateParameter.isValueAccepted(newValue);
+    const { isAccepted, reason } = stateParameter.isValueAccepted(newValue);
     const currentValue = stateValue;
     setParentValueFunction(
       isAccepted ? String(newValue) : String(currentValue),
@@ -92,13 +87,12 @@ const InputQueryParameter = ({setParentValueFunction, ...props}) => {
     const minimumValue = stateParameter.getMinimumValue();
     const maximumValue = stateParameter.getMaximumValue();
     const unit = stateParameter.getUnit();
-    return `{ ${minimumValue}, ${minimumValue + 1}, ${
-      minimumValue + 2
-    }, ... , ${maximumValue} } ${unit}`;
+    return `{ ${minimumValue}, ${minimumValue + 1}, ${minimumValue + 2
+      }, ... , ${maximumValue} } ${unit}`;
   };
 
   const updateMustDisplayInvalidityMessage = (attemptedValue = stateValue) => {
-    const {isAccepted, reason} = stateParameter.isValueAccepted(attemptedValue);
+    const { isAccepted, reason } = stateParameter.isValueAccepted(attemptedValue);
     const isAttemptedValueEmpty = String(attemptedValue).length === 0;
     setStateInvalidMessageReason(reason);
     if (!stateIsInFocus || isAttemptedValueEmpty)
@@ -116,6 +110,16 @@ const InputQueryParameter = ({setParentValueFunction, ...props}) => {
     setStateIsInFocus(false);
     updateMustDisplayInvalidityMessage();
   };
+
+  const setToValueImposedByParent = (valueType) => {
+    switch (valueType) {
+      case IMPOSED_VALUE_TYPE_SUGGESTED:
+        setValue(stateSuggestedValue);
+        break;
+      default:
+        break;
+    }
+  }
 
   /**
    * Effects
@@ -143,13 +147,17 @@ const InputQueryParameter = ({setParentValueFunction, ...props}) => {
     updateLabelText();
   }, []);
 
-  // /**
-  //  * References
-  //  */
-  // useEffect(() => {
-  //   if (props.ref)
-  //     props.ref.current = setValue;
-  // }, [props.ref])
+  useEffect(() => {
+    // Reactive subcribtion
+    const subscription = parentSubject.subscribe({
+      next: setToValueImposedByParent
+    });
+
+    // Cleanup
+    return function cleanup() {
+      subscription.unsubscribe()
+    }
+  }, [])
 
   /**
    * Render

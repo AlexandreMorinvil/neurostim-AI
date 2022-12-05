@@ -1,2 +1,0 @@
-
-NeuralDrive Watch app (Kotlin)

@@ -3,6 +3,7 @@ import {useState, useImperativeHandle, useEffect, forwardRef} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {Button, Paragraph, Dialog, Portal, Provider} from 'react-native-paper';
 import {LineChart, Grid} from 'react-native-svg-charts';
+import {Image} from 'react-native-elements';
 //import Swiper from 'react-native-swiper';
 
 const DialogData = (props, ref) => {
@@ -24,7 +25,6 @@ const DialogData = (props, ref) => {
       n = (Number(point.acc_x) + Number(point.acc_x) + Number(point.acc_x)) / 3;
       new_data.push(n);
     }
-    console.log(new_data);
     setData(new_data);
   };
 
@@ -42,17 +42,21 @@ const DialogData = (props, ref) => {
           <Dialog.Content>
             <Text style={styles.text}>Date : {session.date}</Text>
             <Text style={styles.text}>Heure : {session.time}</Text>
-            <LineChart
+            {/* <LineChart
               style={{height: '90%', width: '90%'}}
               data={data}
               svg={{stroke: 'rgb(134, 65, 244)'}}
               contentInset={{top: 20, bottom: 20}}>
               <Grid />
-            </LineChart>
+            </LineChart> */}
+            <Image
+              source={{
+                uri: `data:image/jpeg;base64,${session.hashHeatMap}`,
+              }}
+              resizeMode="contain"
+              style={styles.image}
+            />
           </Dialog.Content>
-          <Dialog.Actions>
-            <Button onPress={hideDialog}>Done</Button>
-          </Dialog.Actions>
         </Dialog>
       </Portal>
     </View>
@@ -63,9 +67,17 @@ const styles = StyleSheet.create({
   dialog: {
     width: '95%',
     height: '95%',
+    backgroundColor: 'white',
+    flexDirection: 'column',
   },
   text: {
     color: 'black',
+  },
+  image: {
+    //flex: 1,
+    height: '90%',
+    minWidth: '90%',
+    //backgroundColor: 'black',
   },
 });
 

@@ -1,0 +1,198 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.neuraldrive"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:5:5-68
+11-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="android.permission.BODY_SENSORS" /> <!-- Needed in order to re-register for data on device startup. -->
+12-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:6:5-71
+12-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:6:22-68
+13    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+13-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:7:5-78
+13-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:7:22-75
+14    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+14-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:8:5-79
+14-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:9:5-66
+15-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:9:22-64
+16
+17    <uses-feature android:name="android.hardware.type.watch" />
+17-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:10:5-64
+17-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:10:19-61
+18
+19    <permission
+19-->[androidx.core:core:1.9.0] /Users/andrewabdo/.gradle/caches/transforms-3/9b2dc59c11a8e320e3c6e8a07b7381bd/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+20        android:name="com.example.neuraldrive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.9.0] /Users/andrewabdo/.gradle/caches/transforms-3/9b2dc59c11a8e320e3c6e8a07b7381bd/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.9.0] /Users/andrewabdo/.gradle/caches/transforms-3/9b2dc59c11a8e320e3c6e8a07b7381bd/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.example.neuraldrive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.9.0] /Users/andrewabdo/.gradle/caches/transforms-3/9b2dc59c11a8e320e3c6e8a07b7381bd/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.9.0] /Users/andrewabdo/.gradle/caches/transforms-3/9b2dc59c11a8e320e3c6e8a07b7381bd/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+24
+25    <queries>
+25-->[androidx.test:runner:1.5.1] /Users/andrewabdo/.gradle/caches/transforms-3/865ddcef66f7279ae72e11bf52470348/transformed/runner-1.5.1/AndroidManifest.xml:24:5-28:15
+26        <package android:name="androidx.test.orchestrator" />
+26-->[androidx.test:runner:1.5.1] /Users/andrewabdo/.gradle/caches/transforms-3/865ddcef66f7279ae72e11bf52470348/transformed/runner-1.5.1/AndroidManifest.xml:25:9-62
+26-->[androidx.test:runner:1.5.1] /Users/andrewabdo/.gradle/caches/transforms-3/865ddcef66f7279ae72e11bf52470348/transformed/runner-1.5.1/AndroidManifest.xml:25:18-59
+27        <package android:name="androidx.test.services" />
+27-->[androidx.test:runner:1.5.1] /Users/andrewabdo/.gradle/caches/transforms-3/865ddcef66f7279ae72e11bf52470348/transformed/runner-1.5.1/AndroidManifest.xml:26:9-58
+27-->[androidx.test:runner:1.5.1] /Users/andrewabdo/.gradle/caches/transforms-3/865ddcef66f7279ae72e11bf52470348/transformed/runner-1.5.1/AndroidManifest.xml:26:18-55
+28        <package android:name="com.google.android.apps.common.testing.services" />
+28-->[androidx.test:runner:1.5.1] /Users/andrewabdo/.gradle/caches/transforms-3/865ddcef66f7279ae72e11bf52470348/transformed/runner-1.5.1/AndroidManifest.xml:27:9-83
+28-->[androidx.test:runner:1.5.1] /Users/andrewabdo/.gradle/caches/transforms-3/865ddcef66f7279ae72e11bf52470348/transformed/runner-1.5.1/AndroidManifest.xml:27:18-80
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.REORDER_TASKS" />
+31-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:24:5-72
+31-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:24:22-69
+32
+33    <application
+33-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:12:5-34:19
+34        android:allowBackup="false"
+34-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:13:9-36
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.9.0] /Users/andrewabdo/.gradle/caches/transforms-3/9b2dc59c11a8e320e3c6e8a07b7381bd/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:icon="@mipmap/ic_launcher"
+38-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:14:9-43
+39        android:label="@string/app_name"
+39-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:15:9-41
+40        android:testOnly="true"
+41        android:theme="@android:style/Theme.DeviceDefault"
+41-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:17:9-59
+42        android:usesCleartextTraffic="true" >
+42-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:16:9-44
+43        <meta-data
+43-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:19:9-21:36
+44            android:name="com.google.android.wearable.standalone"
+44-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:20:13-66
+45            android:value="true" />
+45-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:21:13-33
+46
+47        <activity
+47-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:23:9-33:20
+48            android:name="com.example.neuraldrive.MainActivity"
+48-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:24:13-41
+49            android:configChanges="orientation|keyboardHidden"
+49-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:25:13-63
+50            android:exported="true"
+50-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:26:13-36
+51            android:launchMode="singleInstance" >
+51-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:27:13-48
+52            <intent-filter>
+52-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:28:13-32:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:29:17-69
+53-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:29:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:31:17-77
+55-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:31:27-74
+56            </intent-filter>
+57        </activity>
+58
+59        <uses-library
+59-->[androidx.wear:wear:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/fe4e8ec250ac8531450fed37b06c7f5f/transformed/wear-1.2.0/AndroidManifest.xml:25:9-27:40
+60            android:name="com.google.android.wearable"
+60-->[androidx.wear:wear:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/fe4e8ec250ac8531450fed37b06c7f5f/transformed/wear-1.2.0/AndroidManifest.xml:26:13-55
+61            android:required="false" />
+61-->[androidx.wear:wear:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/fe4e8ec250ac8531450fed37b06c7f5f/transformed/wear-1.2.0/AndroidManifest.xml:27:13-37
+62        <uses-library
+62-->[androidx.window:window:1.0.0] /Users/andrewabdo/.gradle/caches/transforms-3/fe17c8c7f00b2de05dcf279f111dfa14/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+63            android:name="androidx.window.extensions"
+63-->[androidx.window:window:1.0.0] /Users/andrewabdo/.gradle/caches/transforms-3/fe17c8c7f00b2de05dcf279f111dfa14/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+64            android:required="false" />
+64-->[androidx.window:window:1.0.0] /Users/andrewabdo/.gradle/caches/transforms-3/fe17c8c7f00b2de05dcf279f111dfa14/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+65        <uses-library
+65-->[androidx.window:window:1.0.0] /Users/andrewabdo/.gradle/caches/transforms-3/fe17c8c7f00b2de05dcf279f111dfa14/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+66            android:name="androidx.window.sidecar"
+66-->[androidx.window:window:1.0.0] /Users/andrewabdo/.gradle/caches/transforms-3/fe17c8c7f00b2de05dcf279f111dfa14/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+67            android:required="false" />
+67-->[androidx.window:window:1.0.0] /Users/andrewabdo/.gradle/caches/transforms-3/fe17c8c7f00b2de05dcf279f111dfa14/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+68
+69        <provider
+69-->[androidx.emoji2:emoji2:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/7adf32fb244d4e67298ca35b1d8a6b0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+70            android:name="androidx.startup.InitializationProvider"
+70-->[androidx.emoji2:emoji2:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/7adf32fb244d4e67298ca35b1d8a6b0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+71            android:authorities="com.example.neuraldrive.androidx-startup"
+71-->[androidx.emoji2:emoji2:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/7adf32fb244d4e67298ca35b1d8a6b0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+72            android:exported="false" >
+72-->[androidx.emoji2:emoji2:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/7adf32fb244d4e67298ca35b1d8a6b0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+73            <meta-data
+73-->[androidx.emoji2:emoji2:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/7adf32fb244d4e67298ca35b1d8a6b0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+74-->[androidx.emoji2:emoji2:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/7adf32fb244d4e67298ca35b1d8a6b0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+75                android:value="androidx.startup" />
+75-->[androidx.emoji2:emoji2:1.2.0] /Users/andrewabdo/.gradle/caches/transforms-3/7adf32fb244d4e67298ca35b1d8a6b0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/andrewabdo/.gradle/caches/transforms-3/08ca907ce53fa08b887fd21466e28341/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/andrewabdo/.gradle/caches/transforms-3/08ca907ce53fa08b887fd21466e28341/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+78                android:value="androidx.startup" />
+78-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/andrewabdo/.gradle/caches/transforms-3/08ca907ce53fa08b887fd21466e28341/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+79        </provider>
+80
+81        <activity
+81-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:27:9-34:20
+82            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+82-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:28:13-99
+83            android:exported="true"
+83-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:29:13-36
+84            android:theme="@style/WhiteBackgroundTheme" >
+84-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:30:13-56
+85            <intent-filter android:priority="-100" >
+85-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:13-33:29
+85-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:28-51
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:31:17-77
+86-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:31:27-74
+87            </intent-filter>
+88        </activity>
+89        <activity
+89-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:35:9-42:20
+90            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+90-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:36:13-95
+91            android:exported="true"
+91-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:37:13-36
+92            android:theme="@style/WhiteBackgroundTheme" >
+92-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:38:13-56
+93            <intent-filter android:priority="-100" >
+93-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:13-33:29
+93-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:28-51
+94                <category android:name="android.intent.category.LAUNCHER" />
+94-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:31:17-77
+94-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:31:27-74
+95            </intent-filter>
+96        </activity>
+97        <activity
+97-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:43:9-50:20
+98            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+98-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:44:13-103
+99            android:exported="true"
+99-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:45:13-36
+100            android:theme="@style/WhiteBackgroundDialogTheme" >
+100-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:46:13-62
+101            <intent-filter android:priority="-100" >
+101-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:13-33:29
+101-->[androidx.test:core:1.5.0] /Users/andrewabdo/.gradle/caches/transforms-3/91253c01c056a8751bf10f012c5d4e77/transformed/jetified-core-1.5.0/AndroidManifest.xml:31:28-51
+102                <category android:name="android.intent.category.LAUNCHER" />
+102-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:31:17-77
+102-->/Users/andrewabdo/Projet/neurostimulation-ai-optimization-platform/watch/app/src/main/AndroidManifest.xml:31:27-74
+103            </intent-filter>
+104        </activity>
+105    </application>
+106
+107</manifest>

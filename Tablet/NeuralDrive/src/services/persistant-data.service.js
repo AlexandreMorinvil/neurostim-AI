@@ -16,14 +16,13 @@ export async function initializeValueWithPersistantData(key, defautlValue) {
 export async function loadPersistantData(key, defautlValue) {
   try {
     const stringValue = await AsyncStorage.getItem(key);
-    if (stringValue === null)
-      return defautlValue;
-    return JSON.parse(stringValue)
+    if (stringValue === null) return defautlValue;
+    return JSON.parse(stringValue);
   } catch (error) {
     // Error retrieving data
     console.error(error);
   }
-};
+}
 
 export async function removePersistantData(key) {
   try {
@@ -42,4 +41,4 @@ export async function savePersistantData(key, value) {
     // Error saving data
     console.error(error);
   }
-};
+}

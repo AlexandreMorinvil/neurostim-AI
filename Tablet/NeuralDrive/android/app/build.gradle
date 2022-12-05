@@ -1,5 +1,5 @@
 apply plugin: "com.android.application"
-//apply plugin: 'com.chaquo.python'
+// apply plugin: 'com.chaquo.python'
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 
@@ -161,6 +161,12 @@ android {
         //     }
         // }
 
+        // sourceSets{
+        //     main{
+        //         python.srcDir "src/main/python"
+        //     }
+        // }
+
 
 
         if (isNewArchitectureEnabled()) {
@@ -276,6 +282,8 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    implementation project(':react-native-fs')
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'

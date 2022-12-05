@@ -15,76 +15,74 @@ import numpy as np
 
 
 def main():
+    # Server initializations
     app = Flask(__name__)
-    socketio = SocketIO(app)
+    socketio = SocketIO(app, cors_allowed_origins="*")
     CORS(app)
     ssid = None
 
+    # Deactivate socket.io logs
     logging.getLogger('socketio').setLevel(logging.ERROR)
     logging.getLogger('engineio').setLevel(logging.ERROR)
     logging.getLogger('werkzeug').setLevel(logging.ERROR)
 
+    # Initialize the command handler
     command_handler = CommandHandler(socketio)
-    
-    users = set()
-    watches = set()
+
+    # Server connections global variables
+    connections_set = set()
+
+    ####################################################################################################
+    #### Handling the socket connections.
+    ####################################################################################################
     @socketio.on('connect')
     def handle_connection():
-        users.add(request.sid)
-        print("New User {request.sid} connected.  Current users :", users)
+        connections_set.add(request.sid)
+        print("New User {request.sid} connected.  Current users :", connections_set)
 
+    ####################################################################################################
+    #### Handling the socket disconnections.
+    ####################################################################################################
     @socketio.on('disconnect')
     def handle_disconnection():
-        users.discard(request.sid)
-        print("User disconnected. Current users : ", users)
+        connections_set.discard(request.sid)
+        print("User disconnected. Current users : ", connections_set)
 
+    ####################################################################################################
+    #### Reception of packets from the smart watch from the socket connected to the smart watch and 
+    #### transfer the packet to the connected tablets via the socket connection.
+    ####################################################################################################
     @socketio.on('watch_packet')
     def handle_watch_packet(watch_packet):
         emit('watch_packet', watch_packet, broadcast=True, includde_self=False)
 
     ####################################################################################################
-    #### Only for debug
-    ####################################################################################################
-    @app.route("/packet/", methods=["POST", "GET"])
-    def packet() -> Response:
-        data = request.data.decode('UTF-8')
-        print(data)
-        response = "packet accepted"
-        socketio.emit('message', '1', room=ssid)
-        return jsonify({"content": response})
-
-
-    ####################################################################################################
-    #### Only for debug
+    #### Reception of packets from the smart watch over HTTP and transfer the packet to the connected 
+    #### tablets via the socket connection.
     ####################################################################################################
     @app.route("/watch_packet/", methods=["POST", "GET"])
     def watch_packet() -> Response:
         data = request.data.decode('UTF-8')
-        # data = []
-        
-        #  ### SIMULATION SANS MONTRE ##############################
-        # for i in range(10):
-        #     n = str(random.randint(0, 9))
-        #     data = WatchData(n,n,n,n,n,n).__dict__
-        #         #########################################################
         response = "packet accepted" 
-        print(json.dumps(json.loads(data)))
-        socketio.emit('watch_packet', json.dumps(json.loads(data)), broadcast=True, includde_self=False)
+        data= json.loads(data)
+        command_handler.push_watch_data_in_stack(data)
+        
+        print(data)
+        socketio.emit('watch_packet', json.dumps(data), broadcast=True, includde_self=False)
         return jsonify({"content": response})
 
 
+
     ####################################################################################################
-    #### Recive command form client
-    #### See command enum
+    #### Reception and handling of commands from the tablet.
     ####################################################################################################
     @app.route("/command", methods=["POST", "GET"])
     def command() -> Response:
-        data = request.get_json()
-        print(data)
+        command = request.get_json()
         response = None
-        if data != None:
-            response = command_handler.handle_command(data["action"], data["arg"])
+        if command != None:
+            response = command_handler.handle_command(command["action"], command["arg"])
         return jsonify({"content": response})
 
-
+        
     socketio.run(app, host='0.0.0.0',allow_unsafe_werkzeug=True)

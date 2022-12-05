@@ -23,11 +23,6 @@ export function getIsConnectedStatus() {
   return _isConnected;
 }
 
-export function getBackendIpAddress() {
-  if (isInLocalhostMode) return LOCALHOST;
-  else return backendIpAddress;
-}
-
 export function ipAddressToPutInSmartWatch() {
   return connectionBackendService.getIsInLocalhostMode() ?
     networkService.getSelfIpAddress :

@@ -6,6 +6,7 @@ import {Stopwatch} from 'react-native-stopwatch-timer';
 import {postStartNewSession} from '../../../../services/http-request.service';
 import * as problemDimensionTypeService from '../../../../services/problem-dimension-type.service';
 import {COLOR_BACKGROUND} from '../../../../styles/colors.style';
+import DialogSaveSession from './dialog-save-session/dialog-save-session';
 
 const TEXT_TIMER_HEADER = 'Session Time';
 
@@ -15,6 +16,9 @@ const SectionSessionStarter = () => {
   // stopwatch
   const [sessionStarted, setSessionStarted] = React.useState(false);
   const [stopwatchReset, setStopwatchReset] = React.useState(false);
+
+  // reference to dialog when session end
+  const dialogRef = React.useRef();
 
   /**
    * Render
@@ -37,10 +41,14 @@ const SectionSessionStarter = () => {
         dark={false}
         loading={false}
         onPress={async () => {
-          let status = await postStartNewSession(
-            problemDimensionTypeService.getProblemDimensionsList(),
-          );
-          session_status = status;
+          if (!sessionStarted) {
+            let status = await postStartNewSession(
+              problemDimensionTypeService.getProblemDimensionsList(),
+            );
+            session_status = status;
+          } else {
+            dialogRef.current.showDialog();
+          }
           setValue(value => value + 1);
 
           // stopwatch
@@ -64,6 +72,7 @@ const SectionSessionStarter = () => {
           {!sessionStarted ? 'start session' : 'stop session'}
         </Text>
       </Button>
+      <DialogSaveSession ref={dialogRef}></DialogSaveSession>
     </View>
   );
 };

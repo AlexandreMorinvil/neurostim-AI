@@ -1,17 +1,18 @@
 import React, {useState, useRef} from 'react';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
-import {current_session} from '../global/environement';
-import {
-  post_save_session,
-  post_get_session_by_ID,
-  post_get_save_session_info,
-  post_delete_session,
-} from '../class/http';
+import {View, StyleSheet} from 'react-native';
+import {ToggleButton} from 'react-native-paper';
 import DialogData from '../components/database/dialogData';
-
 import {Button, DataTable, Checkbox} from 'react-native-paper';
-import {ScrollView} from 'react-native-gesture-handler';
+import {
+  save_session,
+  load_all_sessions_info,
+  // BACKEND_STATUS,
+  // setBackendStatus,
+  delete_sessions,
+  get_session_info_by_ID,
+  export_local_to_distant,
+} from '../services/database.service';
+import {getIsInLocalhostMode} from '../services/connection-backend.service';
 
 const testListSessionsInfo = [
   {
@@ -43,13 +44,19 @@ const DataBase = () => {
     <View style={styles.mainBox}>
       <DialogData ref={dialogRef}></DialogData>
       <View style={styles.toolBox}>
+        {/* <ToggleButton.Row
+          onValueChange={value => setBackendStatus(value)}
+          value={value}>
+          <ToggleButton icon="tablet-android" value={BACKEND_STATUS.LOCAL} />
+          <ToggleButton icon="desktop-tower" value={BACKEND_STATUS.DISTANT} />
+        </ToggleButton.Row> */}
         <Button
           style={styles.button}
           mode="contained"
           buttonColor="white"
           textColor="black"
           onPress={async () => {
-            r = await post_get_save_session_info();
+            r = await load_all_sessions_info();
             setSessions(r);
             console.log('***********************************');
             console.log(sessions);
@@ -62,22 +69,25 @@ const DataBase = () => {
           buttonColor="white"
           textColor="black"
           onPress={async () => {
-            r = await post_save_session();
+            r = await delete_sessions(get_list_sessions_check());
             setSessions(r);
-            console.log(sessions);
           }}>
-          SAVE SESSION
+          DELETE SESSIONS
         </Button>
+
         <Button
           style={styles.button}
           mode="contained"
           buttonColor="white"
           textColor="black"
+          icon={'database-export'}
           onPress={async () => {
-            r = await post_delete_session(get_list_sessions_check());
-            setSessions(r);
+            if (!getIsInLocalhostMode()) {
+              r = await export_local_to_distant();
+              setSessions(r);
+            }
           }}>
-          DELETE SESSIONS
+          EXPORT SESSIONS TO DISTANT
         </Button>
       </View>
 
@@ -107,7 +117,7 @@ const DataBase = () => {
                     onPress={async () => {
                       if (dialogRef) {
                         console.log('open dialog session', session.session_id);
-                        session = await post_get_session_by_ID(
+                        session = await get_session_info_by_ID(
                           session.session_id,
                         );
                         dialogRef.current.showDialog(session);
@@ -149,27 +159,6 @@ const DataBase = () => {
             : null}
         </DataTable>
       </View>
-
-      {/* <ScrollView contentContainerStyle={styles.tableBox}>
-        {sessions != null && sessions.length > 0
-          ? sessions.map(session_id => {
-              return (
-                <TouchableOpacity
-                  key={session_id}
-                  style={styles.sessionBox}
-                  onPress={async () => {
-                    if (dialogRef) {
-                      console.log('open dialog session', session_id);
-                      session = await post_get_session_by_ID(session_id);
-                      dialogRef.current.showDialog(session);
-                    }
-                  }}>
-                  <Text style={styles.textSession}>{session_id}</Text>
-                </TouchableOpacity>
-              );
-            })
-          : null}
-      </ScrollView> */}
     </View>
   );
 };

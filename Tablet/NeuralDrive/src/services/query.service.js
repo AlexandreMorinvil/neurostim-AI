@@ -1,4 +1,5 @@
 import { Subject } from "rxjs";
+import { Query } from "../class/query.class";
 import * as httpRequestService from "./http-request.service";
 import * as queryVizualizationService from "./query-vizualization.service";
 
@@ -21,6 +22,18 @@ export function getCurrentSuggestedParametersList() {
 
 export function getLastQueryParametersList() {
   return _historySelectedParametersList.slice(-1)?.pop() || [];
+}
+
+export function getQueriesHistoryList() {
+  const queriesHistoryList = [];
+  for (let index = 0; index < _historySelectedParametersList.length; index++) {
+    queriesHistoryList.push(new Query(
+      _historySelectedParametersList[index],
+      _historySuggestedValues[index],
+      _historyTremorMetricList[index],
+    ));
+  }
+  return queriesHistoryList;
 }
 
 export async function performQuery(parametersValueList, tremorMetric) {

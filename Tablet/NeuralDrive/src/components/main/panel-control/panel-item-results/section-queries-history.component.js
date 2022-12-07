@@ -6,7 +6,7 @@ import * as queryService from "../../../../services/query.service";
 import { COLOR_BACKGROUND } from '../../../../styles/colors.style';
 import { Query } from '../../../../class/query.class';
 
-const TITLE_SECTION = "Queries History (Demo, not working yet)";
+const TITLE_SECTION = "Queries History";
 
 const TEXT_BUTTON_SET_AS_ERROR = "Set As Error"
 
@@ -15,17 +15,13 @@ const SectionQuriesHistory = () => {
   /**
    * States
    */
-  const [stateHistoricQueriesList, setStateHistoricQueriesList] = useState([
-    new Query({ Frequency: 3, Amplitude: 2 }, null, 18),
-    new Query({ Frequency: 7, Amplitude: 8 }, { Frequency: 7, Amplitude: 8 }, 12),
-    new Query({ Frequency: 3, Amplitude: 2 }, { Frequency: 4, Amplitude: 2 }, 7)
-  ]);
+  const [stateHistoricQueriesList, setStateHistoricQueriesList] = useState([]);
 
   /**
    * Functions
    */
   const updateHistory = () => {
-    // setStateHistoricQueriesList(queryService.getQueriesHistory())
+    setStateHistoricQueriesList(queryService.getQueriesHistoryList());
   }
 
   /**
@@ -58,8 +54,8 @@ const SectionQuriesHistory = () => {
           <View style={styles.queryElementSubSection}>
             <View>
               <Text style={styles.queryHeader}>Query #{array.length - index}</Text>
-              <Text>Set : {JSON.stringify(query.getParametersValueList())}</Text>
-              <Text>Sugg : {JSON.stringify(query.getRecommendedValuesList())}</Text>
+              <Text>Values : {JSON.stringify(query.getParametersValueList())}</Text>
+              <Text>Sugg.  : {JSON.stringify(query.getRecommendedValuesList())}</Text>
               <Text>Tremor : {JSON.stringify(query.getTremorValue())}</Text>
             </View>
             <Button

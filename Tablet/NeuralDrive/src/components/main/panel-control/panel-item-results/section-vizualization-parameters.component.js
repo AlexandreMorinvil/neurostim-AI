@@ -1,35 +1,35 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { SelectList } from 'react-native-dropdown-select-list';
+import React, {useState} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import {SelectList} from 'react-native-dropdown-select-list';
 
-import * as queryVizualizationService from "../../../../services/query-vizualization.service";
-import { COLOR_BACKGROUND } from '../../../../styles/colors.style';
+import * as queryVizualizationService from '../../../../services/query-vizualization.service';
+import {COLOR_BACKGROUND} from '../../../../styles/colors.style';
 
-const TITLE_VIZUALIZATION_PARAMETER = "Vizualization Parameter";
+const TITLE_VIZUALIZATION_PARAMETER = 'Vizualization Parameter';
 
-const SectionVizualizationParameters = (props) => {
-
+const SectionVizualizationParameters = props => {
   /**
    * Props
    */
-  const { style } = props;
+  const {style} = props;
 
   /**
    * States
    */
   // TODO : Integrate the values of the "problem-diension.service" once it is properly implemented. We do not want hardcoded values!
-  const [stateFirstSelectedParameter, setStateFirstSelectedParameter] = useState(0);
+  const [stateFirstSelectedParameter, setStateFirstSelectedParameter] =
+    useState(0);
   const gaussianGraphSelectionParam = [
-    { key: 0, value: 'Frequency' },
-    { key: 1, value: 'Amplitude' },
+    {key: 0, value: 'Frequency'},
+    {key: 1, value: 'Amplitude'},
   ];
 
   /**
-   * Function 
+   * Function
    */
-  const commitFirstSelectedParameter = (key) => {
-    queryVizualizationService.setFirstSelectedParameter(key)
-  }
+  const commitFirstSelectedParameter = key => {
+    queryVizualizationService.setFirstSelectedParameter(key);
+  };
 
   /**
    * Render
@@ -38,12 +38,15 @@ const SectionVizualizationParameters = (props) => {
     <View style={[styles.container, props.style]}>
       <Text style={styles.title}> {TITLE_VIZUALIZATION_PARAMETER} </Text>
       <SelectList
+        color="black"
         style={styles.picklist}
         setSelected={setStateFirstSelectedParameter}
         data={gaussianGraphSelectionParam}
         save="key"
-        dropdownTextStyles={{ color: "black" }}
-        onSelect={() => commitFirstSelectedParameter(stateFirstSelectedParameter)}
+        dropdownTextStyles={{color: 'black'}}
+        onSelect={() =>
+          commitFirstSelectedParameter(stateFirstSelectedParameter)
+        }
       />
     </View>
   );
@@ -54,9 +57,9 @@ const SectionVizualizationParameters = (props) => {
  */
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "stretch",
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'stretch',
     backgroundColor: COLOR_BACKGROUND.ItemSection,
     borderRadius: 10,
     padding: 20,
@@ -64,18 +67,20 @@ const styles = StyleSheet.create({
     paddingRight: 40,
   },
   picklist: {
-    backgroundColor: "white",
+    backgroundColor: 'white',
     width: 300,
+    color: 'black',
   },
   connectionsHeaderText: {
-    fontWeight: "bold",
-    marginBottom: 10
+    fontWeight: 'bold',
+    marginBottom: 10,
   },
   title: {
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: 10
-  }
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 10,
+    color: 'black',
+  },
 });
 
 export default SectionVizualizationParameters;

@@ -58,17 +58,11 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
 
     private lateinit var sensorManager: SensorManager
     private var accelSensor: Sensor? = null
-<<<<<<< HEAD
-    private var gyroSensor: Sensor? = null
-
-    private var gyroX: Float = 0.0f; private var gyroY: Float = 0.0f ; private var gyroZ: Float = 0.0f
-=======
     private var gravSensor: Sensor? = null
     private var gyroSensor: Sensor? = null
 
     private var gyroX: Float = 0.0f; private var gyroY: Float = 0.0f ; private var gyroZ: Float = 0.0f
     private var gravityX: Float = 0.0f; private var gravityY: Float = 0.0f ; private var gravityZ: Float = 0.0f
->>>>>>> ab6d0bf5bbc98c12026d2fa3285404e2896b6277
     private var accelX: Float = 0.0f; private var accelY: Float = 0.0f; private var accelZ: Float = 0.0f
 
     private val client = OkHttpClient()
@@ -147,11 +141,8 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         if((sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)  != null)and(sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE)  != null)) {
             accelSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
             sensorManager.registerListener(this,accelSensor, SensorManager.SENSOR_DELAY_GAME)
-<<<<<<< HEAD
-=======
             gravSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY)
             sensorManager.registerListener(this,gravSensor, SensorManager.SENSOR_DELAY_GAME)
->>>>>>> ab6d0bf5bbc98c12026d2fa3285404e2896b6277
             gyroSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
             sensorManager.registerListener(this,gyroSensor, SensorManager.SENSOR_DELAY_GAME)
         }else{
@@ -161,11 +152,7 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         //Sending data every 500 ms
         Timer().scheduleAtFixedRate( object : TimerTask() {
             override fun run() {
-<<<<<<< HEAD
-                if(ipAddressServer!="") {
-=======
                 if(ipAddressServer!="" && stack[stack.length-1]!=']') {
->>>>>>> ab6d0bf5bbc98c12026d2fa3285404e2896b6277
                     println(stack)
                     sendData()
                 }
@@ -231,11 +218,9 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         ipPart4.filters = arrayOf<InputFilter>(InputFilterMinMax("0", "255"))
 
         binding.setIP.setOnClickListener{
-<<<<<<< HEAD
             ipAddressServer = "$ipPart1.$ipPart2.$ipPart3.$ipPart4"
             println(ipAddressServer)
             saveData()
-=======
             println("$ipPart1.$ipPart2.$ipPart3.$ipPart4".isEmpty())
             println("this: $ipPart1")
             if (ipPart1.isNotEmpty() &&
@@ -246,7 +231,6 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
                 ipAddressServer = "$ipPart1.$ipPart2.$ipPart3.$ipPart4"
                 saveData()
             }
->>>>>>> ab6d0bf5bbc98c12026d2fa3285404e2896b6277
         }
 
         binding.showIP.setOnClickListener{
@@ -323,15 +307,12 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
             accelZ = event.values[2]
         }
 
-<<<<<<< HEAD
-=======
         if (event.sensor.type == Sensor.TYPE_GRAVITY){
             gravityX = event.values[0]
             gravityY = event.values[1]
             gravityZ = event.values[2]
         }
 
->>>>>>> ab6d0bf5bbc98c12026d2fa3285404e2896b6277
         if (event.sensor.type == Sensor.TYPE_GYROSCOPE){
             gyroX = event.values[0]
             gyroY = event.values[1]
@@ -340,11 +321,7 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
         val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
         val currentTime = sdf.format(Date())
 
-<<<<<<< HEAD
-        addDataToStack(currentTime ,accelX, accelY, accelZ, gyroX, gyroY, gyroZ)
-=======
         addDataToStack(currentTime ,accelX, accelY, accelZ, gravityX, gravityY, gravityZ, gyroX, gyroY, gyroZ)
->>>>>>> ab6d0bf5bbc98c12026d2fa3285404e2896b6277
     }
 
     //Sensor feature
@@ -353,38 +330,24 @@ class MainActivity : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvi
     companion object {
         val MEDIA_TYPE_MARKDOWN = "text/x-markdown; charset=utf-8".toMediaType()
 
-<<<<<<< HEAD
         private const val TAG = "MainActivity"
 
         private val ACTIVE_INTERVAL = Duration.ofSeconds(1)
-
         private val AMBIENT_INTERVAL = Duration.ofSeconds(10)
-
-=======
-        private val ACTIVE_INTERVAL = Duration.ofSeconds(1)
-        private val AMBIENT_INTERVAL = Duration.ofSeconds(10)
->>>>>>> ab6d0bf5bbc98c12026d2fa3285404e2896b6277
         const val AMBIENT_UPDATE_ACTION =
             "com.example.neuraldrive.action.AMBIENT_UPDATE"
     }
 
     //Creating the data stack
-<<<<<<< HEAD
-    private fun addDataToStack(currentTime : String, acc_x : Float, acc_y : Float, acc_z : Float, gir_x : Float, gir_y : Float, gir_z : Float){
-=======
-    private fun addDataToStack(currentTime : String, acc_x : Float, acc_y : Float, acc_z : Float, grav_x : Float, grav_y : Float, grav_z : Float, gir_x : Float, gir_y : Float, gir_z : Float){
->>>>>>> ab6d0bf5bbc98c12026d2fa3285404e2896b6277
+private fun addDataToStack(currentTime : String, acc_x : Float, acc_y : Float, acc_z : Float, grav_x : Float, grav_y : Float, grav_z : Float, gir_x : Float, gir_y : Float, gir_z : Float){
         val data = "{"+
             "\"time\"" + ":" + "\""+currentTime +"\""+ ","+
             "\"acc_x\"" + ":" + "\""+acc_x.toString() +"\""+ ","+
             "\"acc_y\"" + ":" + "\""+acc_y.toString() +"\""+ ","+
             "\"acc_z\"" + ":" + "\""+acc_z.toString() +"\""+ ","+
-<<<<<<< HEAD
-=======
             "\"grav_x\"" + ":" + "\""+grav_x.toString() +"\""+ ","+
             "\"grav_y\"" + ":" + "\""+grav_y.toString() +"\""+ ","+
             "\"grav_z\"" + ":" + "\""+grav_z.toString() +"\""+ ","+
->>>>>>> ab6d0bf5bbc98c12026d2fa3285404e2896b6277
             "\"gir_x\"" + ":" + "\""+gir_x.toString() +"\""+ ","+
             "\"gir_y\"" + ":" + "\""+gir_y.toString() +"\""+ ","+
             "\"gir_z\"" + ":" + "\""+gir_z.toString() +"\""+

@@ -31,7 +31,7 @@ def generate_heatmap_image(values_list,
     if next_query is not None:
         plt.scatter(next_query[1], next_query[0], zorder=2, color='red')
         # also show the coordinates of the next query
-        plt.text(next_query[1], next_query[0] - 0.75, '({}, {})'.format(next_query[1], next_query[0]), fontsize=8, color='red')
+        # plt.text(next_query[1], next_query[0] - 0.75, '({}, {})'.format(next_query[1], next_query[0]), fontsize=8, color='red')
 
     plt.imshow(heatmap_points, zorder=1)
     plt.xlabel(x_parameter_name, fontsize='x-large')

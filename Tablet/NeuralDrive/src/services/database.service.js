@@ -65,7 +65,7 @@ export async function export_local_to_distant() {
 
 export async function save_session_local() {
   json_session = await post_save_session_local_tablet();
-  write_sessions(json_session);
+  await write_sessions(json_session);
   return await get_all_session_info();
 }
 

@@ -25,9 +25,11 @@ class SaveSession():
         self.parameter_count = parameter_count
         self.points = points
         self.querys = querys
+        self.hashHeatMap = ""
 
 def save_session_local_tablet(session):
     json_object = session.__dict__
+    print(json_object)
     fileData = {
                 'session_id' : json_object['session_id'],
                 'patient_id' : json_object['patient_id'],
@@ -37,8 +39,10 @@ def save_session_local_tablet(session):
                 'parameter_count' : json_object['parameter_count'],
                 'isCheck' : False,
                 'points':json_object['points'],
-                'querys':json_object['querys']
+                'querys':json_object['querys'],
+                'hashHeatMap' : json_object['hashHeatMap']
                 }
+    print(fileData)
     return fileData
 
 

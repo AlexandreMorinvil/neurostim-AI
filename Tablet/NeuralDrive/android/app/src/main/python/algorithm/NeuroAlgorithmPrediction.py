@@ -20,6 +20,7 @@ class NeuroAlgorithmPrediction:
         self.positions = None
         self.n_chan = 0
         self.next_query = None
+        self.suggestion = None
 
     def generate_space(self, dimensions_list):
         
@@ -57,18 +58,11 @@ class NeuroAlgorithmPrediction:
 
         # We will sample the search space randomly for exactly nrnd queries
         x_chan = self.convert_parameter_values_to_position(parameters_value_list)
-        if self.q>=self.nrnd:
-            # Find next point (max of acquisition function)
-            self.acquisition_map = self.ymu \
-                + self.kappa * np.nan_to_num(np.sqrt(self.ys2)) # UCB acquisition function 
-            
-            # Select next query 
-            self.next_query = x_chan
-            self.P_test[self.q][0] = self.next_query
 
-        else:
-            self.P_test[self.q][0] = x_chan
-            self.query_elec = self.P_test[self.q][0]
+        # Select next query
+        self.next_query = x_chan
+        self.P_test[self.q][0] = self.next_query
+
 
         # SEND THIS TO CLINICIAN
         # RECEIVE RESPONSE
@@ -123,6 +117,8 @@ class NeuroAlgorithmPrediction:
         self.ymu, self.ys2 = self.m.predict(
             self.X_test, full_cov=False, Y_metadata=None, include_likelihood=True
         )
+        self.acquisition_map = self.ymu \
+            + self.kappa * np.nan_to_num(np.sqrt(self.ys2)) # UCB acquisition function
 
         # We only test for gp predictions at electrodes that we had queried (presumable we only
         # want to return an electrode that we have already queried).
@@ -146,14 +142,15 @@ class NeuroAlgorithmPrediction:
 
         position = self.generate_output(self.positions)
 
-        if self.next_query:
-            self.next_query = np.where(
-                self.acquisition_map.reshape(len(self.acquisition_map))
-                == np.max(self.acquisition_map.reshape(len(self.acquisition_map)))
-            )
-            print("Next querry =", self.convert_position_to_parameter_values(self.next_query[0][0]))
-            return position, self.convert_position_to_parameter_values(self.next_query[0][0]) # str(self.next_query[0][0])
-        return position, [0, 0]
+        # if self.next_query:
+        self.next_query = np.where(
+            self.acquisition_map.reshape(len(self.acquisition_map))
+            == np.max(self.acquisition_map.reshape(len(self.acquisition_map)))
+        )
+        self.suggestion = self.convert_position_to_parameter_values(self.next_query[0][0])
+        print("Next querry =", self.suggestion)
+        return position, self.suggestion # str(self.next_query[0][0])
+        # return position, [0, 0]
 
     def convert_parameter_values_to_position(self, values_list):
         return np.ravel_multi_index(values_list, self.dimensions_list)

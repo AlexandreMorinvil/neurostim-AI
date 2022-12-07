@@ -41,9 +41,12 @@ class CommandHandler:
             parameters_value_list = [int(value) for value in arg["parameters_value_list"]]
             tremor_metric = float(arg["tremor_metric"])
 
+            # Variables to use
+            algorithm_tremor_value = 1/(1 + tremor_metric)
+
             # Handling : Execute query and generate vizualzations
             algorithm = self.current_session.algorithm
-            position, next_query = algorithm.execute_query(parameters_value_list, tremor_metric)
+            position, next_query = algorithm.execute_query(parameters_value_list, algorithm_tremor_value)
 
             # save query
             if(self.current_save_session):
@@ -71,13 +74,12 @@ class CommandHandler:
             algorithm = self.current_session.algorithm
             heatmap_base64_jpeg_image = generate_heatmap_image(algorithm.ymu,
                                                                algorithm.dimensions_list,
-                                                               first_parameter_index,
-                                                               second_parameter_index,
+                                                               algorithm.suggestion,
                                                                second_parameter_name,
                                                                first_parameter_name)
 
             # Save visualisation
-            self.current_save_session.hashHeatMap = json.dumps(heatmap_base64_jpeg_image)
+            self.current_save_session.hashHeatMap = heatmap_base64_jpeg_image
 
             graph_2d_base64_jpeg_image = generate_2d_graph_image(algorithm.ymu,
                                                                  algorithm.dimensions_list,
@@ -100,7 +102,7 @@ class CommandHandler:
             dimensions = arg["dimensions"]
 
             # Handling : Create session
-            self.current_save_session = SaveSession(random.randint(0, 1000), random.randint(0, 1000),str(arg["dimensions"]), 2, [], [])
+            self.current_save_session = SaveSession(random.randint(0, 1000), arg["patientID"],str(arg["dimensions"]), 2, [], [])
             self.current_session = Session(1, NeuroAlgorithmPrediction())
             self.current_session.algorithm.generate_space(dimensions)
 
@@ -108,9 +110,6 @@ class CommandHandler:
             return  {
                 "status" : Session_status.START.value
             }
-
-        elif action == Action.START_SESSION.value:
-            print('stop session')
 
         elif action == Action.SAVE_SESSION_LOCAL.value:
             if(self.current_save_session):
@@ -155,7 +154,8 @@ class CommandHandler:
     def push_watch_data_in_stack(self, data):
         if(self.current_save_session):
             self.stack_watch_data += data
-            print("push in stack")
+            # print(self.stack_watch_data)
+            # print("push in stack")
 
 
     def free_stack_watch_data(self):

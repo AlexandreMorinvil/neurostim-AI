@@ -9,9 +9,8 @@ import numpy as np
 
 def generate_heatmap_image(values_list, 
                            dimensions_list,
-                           first_parameter_index,
-                           second_parameter_index,
-                           x_parameter_name = "", 
+                           next_query,
+                           x_parameter_name = "",
                            y_parameter_name = ""):
     
     # Compute dimensions
@@ -29,7 +28,12 @@ def generate_heatmap_image(values_list,
 
     # Main heatmap
     plt.clf()
-    plt.imshow(heatmap_points)
+    if next_query is not None:
+        plt.scatter(next_query[1], next_query[0], zorder=2, color='red')
+        # also show the coordinates of the next query
+        # plt.text(next_query[1], next_query[0] - 0.75, '({}, {})'.format(next_query[1], next_query[0]), fontsize=8, color='red')
+
+    plt.imshow(heatmap_points, zorder=1)
     plt.xlabel(x_parameter_name, fontsize='x-large')
     plt.ylabel(y_parameter_name, fontsize='x-large')
 
@@ -50,7 +54,6 @@ def generate_2d_graph_image(values_list,
                             dimensions_list, 
                             first_parameter_index,
                             x_parameter_name = ""):
-
     # Compute dimensions
     reshaped_values_list = np.reshape(values_list, dimensions_list)
 

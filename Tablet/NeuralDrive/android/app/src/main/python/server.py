@@ -64,13 +64,17 @@ def main():
     def watch_packet() -> Response:
         data = request.data.decode('UTF-8')
         response = "packet accepted" 
-        data= json.loads(data)
-        command_handler.push_watch_data_in_stack(data)
-        
-        print(data)
-        socketio.emit('watch_packet', json.dumps(data), broadcast=True, includde_self=False)
-        return jsonify({"content": response})
+        try:
+            data= json.loads(data)
+            command_handler.push_watch_data_in_stack(data)
 
+            # print(data)
+            socketio.emit('watch_packet', json.dumps(data), broadcast=True, includde_self=False)
+        except Exception as e: 
+            # print(e)
+            print("Watch packet error")
+
+        return jsonify({"content": response})
 
 
     ####################################################################################################

@@ -102,7 +102,7 @@ class CommandHandler:
             dimensions = arg["dimensions"]
 
             # Handling : Create session
-            self.current_save_session = SaveSession(random.randint(0, 1000), random.randint(0, 1000),str(arg["dimensions"]), 2, [], [])
+            self.current_save_session = SaveSession(random.randint(0, 1000), arg["patientID"],str(arg["dimensions"]), 2, [], [])
             self.current_session = Session(1, NeuroAlgorithmPrediction())
             self.current_session.algorithm.generate_space(dimensions)
 
@@ -110,9 +110,6 @@ class CommandHandler:
             return  {
                 "status" : Session_status.START.value
             }
-
-        elif action == Action.START_SESSION.value:
-            print('stop session')
 
         elif action == Action.SAVE_SESSION_LOCAL.value:
             if(self.current_save_session):

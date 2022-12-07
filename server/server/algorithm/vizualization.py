@@ -10,8 +10,8 @@ import numpy as np
 def generate_heatmap_image(values_list, 
                            dimensions_list,
                            next_query,
-                           x_parameter_name = "",
-                           y_parameter_name = ""):
+                           x_parameter_name = "Amplitude",
+                           y_parameter_name = "Frequency"):
     
     # Compute dimensions
     reshaped_values_list = np.reshape(values_list, dimensions_list)
@@ -39,7 +39,7 @@ def generate_heatmap_image(values_list,
 
     # Legend
     cbar = plt.colorbar()
-    cbar.set_label('Average Tremor', fontsize='large')
+    cbar.set_label('Tremor suppression level', fontsize='large')
 
     # Generate image
     pic_iobytes = io.BytesIO()
@@ -77,7 +77,7 @@ def generate_2d_graph_image(values_list,
     plt.scatter(x_points, y_points, zorder=2)
 
     plt.xlabel(x_parameter_name, fontsize='x-large')
-    plt.ylabel('Average tremor', fontsize='x-large')
+    plt.ylabel('Tremor suppression level', fontsize='x-large')
 
     # Generate image
     pic_iobytes = io.BytesIO()

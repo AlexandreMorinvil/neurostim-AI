@@ -29,9 +29,7 @@ class CommandHandler:
         #self.db.connect()
 
 ####################################################################################################
-#### START_SESSION : Create a new session.
-#### EXECUTE_QUERY : Execute one iteration of the algorithme
-#### RECEIVE_DATA_WATCH : debug canal to recive watch data
+#### Handling of all the commands
 ####################################################################################################
     def handle_command(self, action: int, arg: Union[int, dict, str]) -> Union[None, list, int]:
         print("Action :", action, ", Arguments :", arg)
@@ -74,17 +72,16 @@ class CommandHandler:
             algorithm = self.current_session.algorithm
             heatmap_base64_jpeg_image = generate_heatmap_image(algorithm.ymu,
                                                                algorithm.dimensions_list,
-                                                               algorithm.suggestion,
-                                                               second_parameter_name,
-                                                               first_parameter_name)
+                                                               algorithm.suggestion)
 
-            # Save visualisation
-            self.current_save_session.hashHeatMap = heatmap_base64_jpeg_image
 
             graph_2d_base64_jpeg_image = generate_2d_graph_image(algorithm.ymu,
                                                                  algorithm.dimensions_list,
                                                                  first_parameter_index,
                                                                  first_parameter_name)
+            # Save viszalisation
+            self.current_save_session.hashHeatMap = heatmap_base64_jpeg_image
+
             # Response format
             return {
                 "heatmap_base64_jpeg_image" :           json.dumps(heatmap_base64_jpeg_image),
